@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+	<data name="MainWindow_AppTitle" xml:space="preserve"><value>MyPause</value></data>
+	<data name="MainWindow_ConfiguredBreaksHeader" xml:space="preserve"><value>Geconfigureerde Pauzes</value></data>
+	<data name="MainWindow_NewBreakButton" xml:space="preserve"><value>+ Nieuwe Pauze</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksFormat" xml:space="preserve"><value>{0} pauzes geconfigureerd</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksDefault" xml:space="preserve"><value>0 pauzes geconfigureerd</value></data>
+	<data name="MainWindow_StartupWithWindows" xml:space="preserve"><value>Starten met Windows</value></data>
+	<data name="MainWindow_MinimizeToTray" xml:space="preserve"><value>X Minimaliseren naar Systeemvak</value></data>
+	<data name="MainWindow_Start" xml:space="preserve"><value>Starten</value></data>
+	<data name="MainWindow_Stop" xml:space="preserve"><value>Stoppen</value></data>
+	<data name="MainWindow_UserIdlePaused" xml:space="preserve"><value>Gebruiker Inactief: Timers Gepauzeerd</value></data>
+	<data name="MainWindow_UserActiveRestarted" xml:space="preserve"><value>Gebruiker Actief: Timers Herstart</value></data>
+	<data name="MainWindow_AlertUpdatedFormat" xml:space="preserve"><value>Pauze '{0}' bijgewerkt</value></data>
+	<data name="MainWindow_AlertDeletedFormat" xml:space="preserve"><value>Pauze '{0}' verwijderd</value></data>
+	<data name="MainWindow_AlertAddedFormat" xml:space="preserve"><value>Pauze '{0}' toegevoegd</value></data>
+	<data name="MainWindow_AppActiveMonitoring" xml:space="preserve"><value>App Actief - Pauzes Bewaken...</value></data>
+	<data name="MainWindow_AppStopped" xml:space="preserve"><value>App Gestopt</value></data>
+	<data name="MainWindow_StartupEnabled" xml:space="preserve"><value>Starten met Windows Ingeschakeld.</value></data>
+	<data name="MainWindow_StartupDisabled" xml:space="preserve"><value>Starten met Windows Uitgeschakeld.</value></data>
+	<data name="MainWindow_StartupUpdateErrorFormat" xml:space="preserve"><value>Fout bij Bijwerken Startinstelling: {0}</value></data>
+
+	<data name="WorkSchedule_Label" xml:space="preserve"><value>Werkschema:</value></data>
+	<data name="WorkSchedule_From" xml:space="preserve"><value>van</value></data>
+	<data name="WorkSchedule_To" xml:space="preserve"><value>tot</value></data>
+	<data name="WorkSchedule_Cooldown_Label" xml:space="preserve"><value>Interval tussen pauzes:</value></data>
+	<data name="WorkSchedule_Cooldown_Unit" xml:space="preserve"><value>min (0 = uitgeschakeld)</value></data>
+
+	<data name="AlertCard_DescriptionFixedTimeFormat" xml:space="preserve"><value>Tijd: {0:D2}:{1:D2} - Pauze: {2}</value></data>
+	<data name="AlertCard_DescriptionTimerFormat" xml:space="preserve"><value>Timer: elke {0} - Pauze: {1}</value></data>
+	<data name="AlertCard_DeleteConfirmFormat" xml:space="preserve"><value>'{0}' verwijderen?</value></data>
+	<data name="AlertCard_ConfirmTitle" xml:space="preserve"><value>Bevestigen</value></data>
+
+	<data name="EditPause_Title" xml:space="preserve"><value>Pauze Bewerken</value></data>
+	<data name="EditPause_Active" xml:space="preserve"><value>Pauze Actief</value></data>
+	<data name="EditPause_Name" xml:space="preserve"><value>Naam</value></data>
+	<data name="EditPause_Days" xml:space="preserve"><value>Dagen:</value></data>
+	<data name="EditPause_DayMon" xml:space="preserve"><value>Ma</value></data>
+	<data name="EditPause_DayTue" xml:space="preserve"><value>Di</value></data>
+	<data name="EditPause_DayWed" xml:space="preserve"><value>Wo</value></data>
+	<data name="EditPause_DayThu" xml:space="preserve"><value>Do</value></data>
+	<data name="EditPause_DayFri" xml:space="preserve"><value>Vr</value></data>
+	<data name="EditPause_DaySat" xml:space="preserve"><value>Za</value></data>
+	<data name="EditPause_DaySun" xml:space="preserve"><value>Zo</value></data>
+	<data name="EditPause_TabFixedTime" xml:space="preserve"><value>Vast Moment</value></data>
+	<data name="EditPause_Time" xml:space="preserve"><value>Tijd</value></data>
+	<data name="EditPause_TabTimer" xml:space="preserve"><value>Timer</value></data>
+	<data name="EditPause_Every" xml:space="preserve"><value>Om de</value></data>
+	<data name="EditPause_Mandatory" xml:space="preserve"><value>Verplichte Pauze</value></data>
+	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Pauzeduur</value></data>
+	<data name="EditPause_Snooze" xml:space="preserve"><value>Uitstellen</value></data>
+	<data name="EditPause_SnoozeDuration" xml:space="preserve"><value>Snoozeduur</value></data>
+	<data name="EditPause_MaxSnoozes" xml:space="preserve"><value>Max Snoozers</value></data>
+	<data name="EditPause_NotificationSound" xml:space="preserve"><value>Meldingsgeluid</value></data>
+	<data name="EditPause_NoSoundSelected" xml:space="preserve"><value>Geen geluid geselecteerd</value></data>
+	<data name="EditPause_SelectAudioFile" xml:space="preserve"><value>Audiobestand selecteren...</value></data>
+	<data name="EditPause_ResetDefault" xml:space="preserve"><value>Standaard Herstellen</value></data>
+	<data name="EditPause_Cancel" xml:space="preserve"><value>Annuleren</value></data>
+	<data name="EditPause_Save" xml:space="preserve"><value>Opslaan</value></data>
+	<data name="EditPause_UnitSeconds" xml:space="preserve"><value>Seconden</value></data>
+	<data name="EditPause_UnitMinutes" xml:space="preserve"><value>Minuten</value></data>
+	<data name="EditPause_UnitHours" xml:space="preserve"><value>Uren</value></data>
+	<data name="EditPause_NoSoundSelectedWindowsAlert" xml:space="preserve"><value>Geen geluid geselecteerd (Windows Alert wordt gebruikt)</value></data>
+	<data name="EditPause_SoundFileFormat" xml:space="preserve"><value>Bestand: {0}</value></data>
+	<data name="EditPause_SoundFileNotFound" xml:space="preserve"><value>Bestand niet gevonden (Windows Alert wordt gebruikt)</value></data>
+	<data name="EditPause_OpenFileFilter" xml:space="preserve"><value>Audiobestanden (*.wav;*.mp3)|*.wav;*.mp3|Alle bestanden (*.*)|*.*</value></data>
+	<data name="EditPause_OpenFileTitle" xml:space="preserve"><value>Selecteer meldingsgeluid voor deze pauze</value></data>
+	<data name="EditPause_ErrorPauseDurationPositive" xml:space="preserve"><value>Pauzeduur moet groter zijn dan 0.</value></data>
+	<data name="EditPause_ErrorTimerPositive" xml:space="preserve"><value>Timerwaarde moet groter zijn dan 0.</value></data>
+	<data name="EditPause_ErrorSnoozePositive" xml:space="preserve"><value>Snoozeduur moet groter zijn dan 0.</value></data>
+	<data name="EditPause_ErrorInputDataFormat" xml:space="preserve"><value>Invoergegevensfout: {0}</value></data>
+	<data name="EditPause_ErrorNameEmpty" xml:space="preserve"><value>De pauzenaam mag niet leeg zijn.</value></data>
+	<data name="EditPause_ErrorNameDuplicate" xml:space="preserve"><value>De pauzenaam is ongeldig of dubbel.</value></data>
+
+	<data name="PauseNotification_Title" xml:space="preserve"><value>PAUZE</value></data>
+	<data name="PauseNotification_Header" xml:space="preserve"><value>PAUZE</value></data>
+	<data name="PauseNotification_Skip" xml:space="preserve"><value>Pauze Overslaan</value></data>
+	<data name="PauseNotification_Snooze" xml:space="preserve"><value>Uitstellen</value></data>
+	<data name="PauseNotification_DurationFormat" xml:space="preserve"><value>Pauzeduur: {0}</value></data>
+	<data name="PauseNotification_SnoozeButtonFormat" xml:space="preserve"><value>⏱ Uitstellen ({0})</value></data>
+	<data name="PauseNotification_SnoozeAvailableFormat" xml:space="preserve"><value>Beschikbare uitstelacties: {0}/{1}</value></data>
+
+	<data name="TrayMenu_Open" xml:space="preserve"><value>Openen</value></data>
+	<data name="TrayMenu_Exit" xml:space="preserve"><value>Afsluiten</value></data>
+
+	<data name="Duration_LongHourSingular" xml:space="preserve"><value>uur</value></data>
+	<data name="Duration_LongHourPlural" xml:space="preserve"><value>uren</value></data>
+	<data name="Duration_LongMinuteSingular" xml:space="preserve"><value>minuut</value></data>
+	<data name="Duration_LongMinutePlural" xml:space="preserve"><value>minuten</value></data>
+	<data name="Duration_LongSecondSingular" xml:space="preserve"><value>seconde</value></data>
+	<data name="Duration_LongSecondPlural" xml:space="preserve"><value>seconden</value></data>
+	<data name="Duration_DaySingular" xml:space="preserve"><value>dag</value></data>
+	<data name="Duration_DayPlural" xml:space="preserve"><value>dagen</value></data>
+
+	<data name="Alerts_Default_Morning" xml:space="preserve"><value>Ochtend</value></data>
+	<data name="Alerts_Default_Afternoon" xml:space="preserve"><value>Middag</value></data>
+	<data name="Alerts_Default_HourlyTimer" xml:space="preserve"><value>Ieder Uur Timer</value></data>
+
+	<data name="Common_InfoTitle" xml:space="preserve"><value>Informatie</value></data>
+	<data name="Common_ErrorTitle" xml:space="preserve"><value>Fout</value></data>
+</root>

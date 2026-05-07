@@ -1,0 +1,126 @@
+﻿<Window x:Class="MyPause.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="clr-namespace:MyPause.Views"
+	xmlns:res="clr-namespace:MyPause.Resources"
+	Title="{x:Static res:Strings.MainWindow_AppTitle}"
+	Height="640"
+	Width="960"
+	MinHeight="640"
+	MinWidth="960"
+	Background="#F5F5F5"
+	WindowStartupLocation="CenterScreen"
+	Loaded="OnLoaded"
+	Closing="OnClosing">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+
+		<StackPanel Grid.Row="0"
+				Background="#2C3E50"
+				Margin="20,20,20,20">
+			<TextBlock Text="{x:Static res:Strings.MainWindow_AppTitle}"
+					FontSize="24"
+					FontWeight="Bold"
+					Foreground="White"
+					VerticalAlignment="Center"
+					Margin="8,5,8,5"/>
+		</StackPanel>
+
+		<Grid Grid.Row="1"
+				Margin="20,0,20,20">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+
+			<ContentControl Grid.Row="0" x:Name="WorkSchedulePanelSlot" Margin="0,0,0,10"/>
+
+			<TextBlock Grid.Row="1" Text="{x:Static res:Strings.MainWindow_ConfiguredBreaksHeader}"
+					FontSize="16"
+					FontWeight="Bold"
+					Margin="0,0,0,10"/>
+			   <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+				   <StackPanel x:Name="AlertsPanel"/>
+			   </ScrollViewer>
+		</Grid>
+
+		<Grid Grid.Row="2"
+				Background="#ECF0F1"
+				Margin="20,20,20,20">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<Button Grid.Column="0"
+					Content="{x:Static res:Strings.MainWindow_NewBreakButton}"
+					Padding="12,8"
+					Background="#27AE60"
+					Foreground="White"
+					FontWeight="Bold"
+					Click="AddPauseButton_Click"
+					Cursor="Hand"
+					HorizontalAlignment="Left"/>
+
+			<TextBlock Grid.Column="1"
+					x:Name="StatusText"
+					Text="{x:Static res:Strings.MainWindow_StatusConfiguredBreaksDefault}"
+					FontSize="11"
+					Foreground="#555"
+					VerticalAlignment="Center"
+					Margin="15,0,15,0"/>
+
+			<TextBlock Grid.Column="2"/>
+
+			<CheckBox Grid.Column="3"
+					x:Name="StartupCheckBox"
+					Content="{x:Static res:Strings.MainWindow_StartupWithWindows}"
+					VerticalAlignment="Center"
+					Margin="0,0,15,0"
+					Click="StartupCheckBox_Click"
+					HorizontalAlignment="Right"/>
+
+			<CheckBox Grid.Column="4"
+					x:Name="MinimizeToTrayCheckBox"
+					Content="{x:Static res:Strings.MainWindow_MinimizeToTray}"
+					VerticalAlignment="Center"
+					Margin="0,0,15,0"
+					Click="MinimizeToTrayCheckBox_Click"
+					HorizontalAlignment="Right"/>
+
+			<Button Grid.Column="5"
+					Content="{x:Static res:Strings.MainWindow_Stop}"
+					Padding="12,8"
+					Background="#E74C3C"
+					Foreground="White"
+					FontWeight="Bold"
+					Click="StopButton_Click"
+					Cursor="Hand"
+					HorizontalAlignment="Right"
+					Margin="0,0,10,0"/>
+
+			<Button Grid.Column="6"
+					Content="{x:Static res:Strings.MainWindow_Start}"
+					Padding="12,8"
+					Background="#27AE60"
+					Foreground="White"
+					FontWeight="Bold"
+					Click="StartButton_Click"
+					Cursor="Hand"
+					HorizontalAlignment="Right"/>
+		</Grid>
+	</Grid>
+</Window>

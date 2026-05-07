@@ -1,0 +1,164 @@
+{
+	"version": "2.0.0",
+	"inputs": [
+		{
+			"id": "publishConfiguration",
+			"type": "pickString",
+			"description": "Select publish profile",
+			"default": "ReleasePortable",
+			"options": [
+				{
+					"label": "ReleasePortable (self-contained + single-file + compression)",
+					"value": "ReleasePortable"
+				},
+				{
+					"label": "ReleaseSmall (framework-dependent + single-file)",
+					"value": "ReleaseSmall"
+				},
+				{
+					"label": "Release (standard publish, no extra options)",
+					"value": "Release"
+				}
+			]
+		}
+	],
+	"tasks": [
+		{
+			"label": "build",
+			"command": "dotnet",
+			"type": "shell",
+			"args": [
+				"build"
+			],
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/MyPause"
+			},
+			"runOptions": {
+				"instanceLimit": 1,
+				"instancePolicy": "terminateOldest"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"icon": {
+				"id": "gear",
+				"color": "terminal.ansiBlue"
+			},
+			"presentation": {
+				"reveal": "silent",
+				"revealProblems": "onProblem",
+				"panel": "shared",
+				"focus": false,
+				"echo": true,
+				"clear": false,
+				"showReuseMessage": false
+			}
+		},
+		{
+			"label": "Run MyPause",
+			"type": "shell",
+			"command": "dotnet run",
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/MyPause",
+			},
+			"runOptions": {
+				"instanceLimit": 1,
+				"instancePolicy": "terminateOldest"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"icon": {
+				"id": "run",
+				"color": "terminal.ansiGreen"
+			},
+			"presentation": {
+				"reveal": "silent",
+				"revealProblems": "onProblem",
+				"panel": "shared",
+				"focus": false,
+				"echo": true,
+				"clear": false,
+				"showReuseMessage": false
+			}
+		},
+		{
+			"label": "Open MyPause AppData Folder",
+			"type": "shell",
+			"command": "explorer.exe",
+			"args": [
+				"${env:APPDATA}\\MyPause"
+			],
+			"windows": {
+				"command": "explorer.exe"
+			},
+			"problemMatcher": [],
+			"runOptions": {
+				"instanceLimit": 1,
+				"instancePolicy": "silent"
+			},
+			"icon": {
+				"id": "folder",
+				"color": "terminal.ansiYellow"
+			},
+			"presentation": {
+				"reveal": "silent",
+				"revealProblems": "onProblem",
+				"panel": "shared",
+				"focus": false,
+				"echo": true,
+				"clear": false,
+				"showReuseMessage": false,
+				"close": true
+			}
+		},
+		{
+			"label": "Create executable",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"publish",
+				"MyPause.csproj",
+				"-c",
+				"${input:publishConfiguration}",
+				"-r",
+				"win-x64"
+			],
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/MyPause"
+			},
+			"runOptions": {
+				"instanceLimit": 1,
+				"instancePolicy": "prompt"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			},
+			"icon": {
+				"id": "package",
+				"color": "terminal.ansiBlue"
+			},
+			"presentation": {
+				"reveal": "always",
+				"revealProblems": "onProblem",
+				"panel": "shared",
+				"focus": false,
+				"echo": true,
+				"clear": false,
+				"showReuseMessage": false
+			}
+		}
+	]
+}

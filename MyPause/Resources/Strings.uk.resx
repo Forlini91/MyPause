@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+	<data name="MainWindow_AppTitle" xml:space="preserve"><value>MyPause</value></data>
+	<data name="MainWindow_ConfiguredBreaksHeader" xml:space="preserve"><value>Налаштовані Перерви</value></data>
+	<data name="MainWindow_NewBreakButton" xml:space="preserve"><value>+ Нова Перерва</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksFormat" xml:space="preserve"><value>Налаштовано {0} перерв</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksDefault" xml:space="preserve"><value>Налаштовано 0 перерв</value></data>
+	<data name="MainWindow_StartupWithWindows" xml:space="preserve"><value>Запуск з Windows</value></data>
+	<data name="MainWindow_MinimizeToTray" xml:space="preserve"><value>X Мінімізує на Панель</value></data>
+	<data name="MainWindow_Start" xml:space="preserve"><value>Запустити</value></data>
+	<data name="MainWindow_Stop" xml:space="preserve"><value>Зупинити</value></data>
+	<data name="MainWindow_UserIdlePaused" xml:space="preserve"><value>Користувач Неактивний: Таймери Призупинені</value></data>
+	<data name="MainWindow_UserActiveRestarted" xml:space="preserve"><value>Користувач Активний: Таймери Перезапущені</value></data>
+	<data name="MainWindow_AlertUpdatedFormat" xml:space="preserve"><value>Перерва '{0}' оновлена</value></data>
+	<data name="MainWindow_AlertDeletedFormat" xml:space="preserve"><value>Перерва '{0}' видалена</value></data>
+	<data name="MainWindow_AlertAddedFormat" xml:space="preserve"><value>Перерва '{0}' додана</value></data>
+	<data name="MainWindow_AppActiveMonitoring" xml:space="preserve"><value>Додаток Активний - Моніторинг Перерв...</value></data>
+	<data name="MainWindow_AppStopped" xml:space="preserve"><value>Додаток Зупинено</value></data>
+	<data name="MainWindow_StartupEnabled" xml:space="preserve"><value>Запуск з Windows Увімкнено.</value></data>
+	<data name="MainWindow_StartupDisabled" xml:space="preserve"><value>Запуск з Windows Вимкнено.</value></data>
+	<data name="MainWindow_StartupUpdateErrorFormat" xml:space="preserve"><value>Помилка Оновлення Параметра Запуску: {0}</value></data>
+
+	<data name="WorkSchedule_Label" xml:space="preserve"><value>Розклад роботи:</value></data>
+	<data name="WorkSchedule_From" xml:space="preserve"><value>від</value></data>
+	<data name="WorkSchedule_To" xml:space="preserve"><value>до</value></data>
+	<data name="WorkSchedule_Cooldown_Label" xml:space="preserve"><value>Інтервал між перервами:</value></data>
+	<data name="WorkSchedule_Cooldown_Unit" xml:space="preserve"><value>хв (0 = вимкнено)</value></data>
+
+	<data name="AlertCard_DescriptionFixedTimeFormat" xml:space="preserve"><value>Час: {0:D2}:{1:D2} - Перерва: {2}</value></data>
+	<data name="AlertCard_DescriptionTimerFormat" xml:space="preserve"><value>Таймер: кожні {0} - Перерва: {1}</value></data>
+	<data name="AlertCard_DeleteConfirmFormat" xml:space="preserve"><value>Видалити '{0}'?</value></data>
+	<data name="AlertCard_ConfirmTitle" xml:space="preserve"><value>Підтвердити</value></data>
+
+	<data name="EditPause_Title" xml:space="preserve"><value>Редагувати Перерву</value></data>
+	<data name="EditPause_Active" xml:space="preserve"><value>Перерва Активна</value></data>
+	<data name="EditPause_Name" xml:space="preserve"><value>Назва</value></data>
+	<data name="EditPause_Days" xml:space="preserve"><value>Дні:</value></data>
+	<data name="EditPause_DayMon" xml:space="preserve"><value>Пн</value></data>
+	<data name="EditPause_DayTue" xml:space="preserve"><value>Вт</value></data>
+	<data name="EditPause_DayWed" xml:space="preserve"><value>Ср</value></data>
+	<data name="EditPause_DayThu" xml:space="preserve"><value>Чт</value></data>
+	<data name="EditPause_DayFri" xml:space="preserve"><value>Пт</value></data>
+	<data name="EditPause_DaySat" xml:space="preserve"><value>Сб</value></data>
+	<data name="EditPause_DaySun" xml:space="preserve"><value>Нд</value></data>
+	<data name="EditPause_TabFixedTime" xml:space="preserve"><value>Фіксований Час</value></data>
+	<data name="EditPause_Time" xml:space="preserve"><value>Час</value></data>
+	<data name="EditPause_TabTimer" xml:space="preserve"><value>Таймер</value></data>
+	<data name="EditPause_Every" xml:space="preserve"><value>Кожні</value></data>
+	<data name="EditPause_Mandatory" xml:space="preserve"><value>Обов'язкова Перерва</value></data>
+	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Тривалість Перерви</value></data>
+	<data name="EditPause_Snooze" xml:space="preserve"><value>Відкласти</value></data>
+	<data name="EditPause_SnoozeDuration" xml:space="preserve"><value>Тривалість Відкладання</value></data>
+	<data name="EditPause_MaxSnoozes" xml:space="preserve"><value>Макс Відкладань</value></data>
+	<data name="EditPause_NotificationSound" xml:space="preserve"><value>Звук Сповіщення</value></data>
+	<data name="EditPause_NoSoundSelected" xml:space="preserve"><value>Звук не вибран</value></data>
+	<data name="EditPause_SelectAudioFile" xml:space="preserve"><value>Виберіть аудіофайл...</value></data>
+	<data name="EditPause_ResetDefault" xml:space="preserve"><value>Скинути до Типу</value></data>
+	<data name="EditPause_Cancel" xml:space="preserve"><value>Скасувати</value></data>
+	<data name="EditPause_Save" xml:space="preserve"><value>Зберегти</value></data>
+	<data name="EditPause_UnitSeconds" xml:space="preserve"><value>Секунди</value></data>
+	<data name="EditPause_UnitMinutes" xml:space="preserve"><value>Хвилини</value></data>
+	<data name="EditPause_UnitHours" xml:space="preserve"><value>Години</value></data>
+	<data name="EditPause_NoSoundSelectedWindowsAlert" xml:space="preserve"><value>Звук не вибран (Використовується Перевірка Windows)</value></data>
+	<data name="EditPause_SoundFileFormat" xml:space="preserve"><value>Файл: {0}</value></data>
+	<data name="EditPause_SoundFileNotFound" xml:space="preserve"><value>Файл не знайдено (Використовується Перевірка Windows)</value></data>
+	<data name="EditPause_OpenFileFilter" xml:space="preserve"><value>Аудіофайли (*.wav;*.mp3)|*.wav;*.mp3|Всі файли (*.*)|*.*</value></data>
+	<data name="EditPause_OpenFileTitle" xml:space="preserve"><value>Виберіть звук сповіщення для цієї перерви</value></data>
+	<data name="EditPause_ErrorPauseDurationPositive" xml:space="preserve"><value>Тривалість перерви повинна бути більша за 0.</value></data>
+	<data name="EditPause_ErrorTimerPositive" xml:space="preserve"><value>Значення таймера повинно бути більше за 0.</value></data>
+	<data name="EditPause_ErrorSnoozePositive" xml:space="preserve"><value>Тривалість відкладання повинна бути більша за 0.</value></data>
+	<data name="EditPause_ErrorInputDataFormat" xml:space="preserve"><value>Помилка Вхідних Даних: {0}</value></data>
+	<data name="EditPause_ErrorNameEmpty" xml:space="preserve"><value>Ім'я перерви не може бути порожнім.</value></data>
+	<data name="EditPause_ErrorNameDuplicate" xml:space="preserve"><value>Ім'я перерви недійсне або дубльоване.</value></data>
+
+	<data name="PauseNotification_Title" xml:space="preserve"><value>ПЕРЕРВА</value></data>
+	<data name="PauseNotification_Header" xml:space="preserve"><value>ПЕРЕРВА</value></data>
+	<data name="PauseNotification_Skip" xml:space="preserve"><value>Пропустити Перерву</value></data>
+	<data name="PauseNotification_Snooze" xml:space="preserve"><value>Відкласти</value></data>
+	<data name="PauseNotification_DurationFormat" xml:space="preserve"><value>Тривалість перерви: {0}</value></data>
+	<data name="PauseNotification_SnoozeButtonFormat" xml:space="preserve"><value>⏱ Відкласти ({0})</value></data>
+	<data name="PauseNotification_SnoozeAvailableFormat" xml:space="preserve"><value>Доступні Відкладання: {0}/{1}</value></data>
+
+	<data name="TrayMenu_Open" xml:space="preserve"><value>Відкрити</value></data>
+	<data name="TrayMenu_Exit" xml:space="preserve"><value>Вихід</value></data>
+
+	<data name="Duration_LongHourSingular" xml:space="preserve"><value>година</value></data>
+	<data name="Duration_LongHourPlural" xml:space="preserve"><value>години</value></data>
+	<data name="Duration_LongMinuteSingular" xml:space="preserve"><value>хвилина</value></data>
+	<data name="Duration_LongMinutePlural" xml:space="preserve"><value>хвилини</value></data>
+	<data name="Duration_LongSecondSingular" xml:space="preserve"><value>секунда</value></data>
+	<data name="Duration_LongSecondPlural" xml:space="preserve"><value>секунди</value></data>
+	<data name="Duration_DaySingular" xml:space="preserve"><value>день</value></data>
+	<data name="Duration_DayPlural" xml:space="preserve"><value>дні</value></data>
+
+	<data name="Alerts_Default_Morning" xml:space="preserve"><value>Ранок</value></data>
+	<data name="Alerts_Default_Afternoon" xml:space="preserve"><value>Полудень</value></data>
+	<data name="Alerts_Default_HourlyTimer" xml:space="preserve"><value>Таймер Кожної Години</value></data>
+
+	<data name="Common_InfoTitle" xml:space="preserve"><value>Інформація</value></data>
+	<data name="Common_ErrorTitle" xml:space="preserve"><value>Помилка</value></data>
+</root>

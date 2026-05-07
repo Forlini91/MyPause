@@ -1,0 +1,87 @@
+<UserControl x:Class="MyPause.Views.WorkSchedulePanel"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:res="clr-namespace:MyPause.Resources"
+		Loaded="OnLoaded">
+	<Border Background="#ECF0F1" BorderBrush="#D0D7DE" BorderThickness="1" Padding="10" Margin="0,0,0,10">
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+
+			<Grid Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" >
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+
+				<TextBlock Grid.Column="0" Text="{x:Static res:Strings.WorkSchedule_Label}" VerticalAlignment="Center" FontWeight="Bold" Margin="0,0,8,0" HorizontalAlignment="Left"/>
+				<TextBlock Grid.Column="1" Text="{x:Static res:Strings.WorkSchedule_From}" VerticalAlignment="Center" Margin="0,0,6,0" HorizontalAlignment="Left"/>
+
+				<StackPanel Grid.Column="2" Orientation="Horizontal" Margin="0,0,4,0" HorizontalAlignment="Left">
+					<TextBox x:Name="WorkScheduleStartHourBox" Width="40" TextAlignment="Center" VerticalContentAlignment="Center" LostFocus="FixedRangeTextBox_LostFocus"/>
+					<StackPanel Width="18" Margin="2,0,0,0">
+						<RepeatButton Content="&#x25B2;" Height="12" FontSize="8" Padding="0" Click="FixedRangeStartHourUp_Click"/>
+						<RepeatButton Content="&#x25BC;" Height="12" FontSize="8" Padding="0" Click="FixedRangeStartHourDown_Click"/>
+					</StackPanel>
+				</StackPanel>
+
+				<TextBlock Grid.Column="3" Text=":" VerticalAlignment="Center" Margin="0,0,4,0" HorizontalAlignment="Center"/>
+
+				<StackPanel Grid.Column="4" Orientation="Horizontal" Margin="0,0,8,0" HorizontalAlignment="Left">
+					<TextBox x:Name="WorkScheduleStartMinuteBox" Width="40" TextAlignment="Center" VerticalContentAlignment="Center" LostFocus="FixedRangeTextBox_LostFocus"/>
+					<StackPanel Width="18" Margin="2,0,0,0">
+						<RepeatButton Content="&#x25B2;" Height="12" FontSize="8" Padding="0" Click="FixedRangeStartMinuteUp_Click"/>
+						<RepeatButton Content="&#x25BC;" Height="12" FontSize="8" Padding="0" Click="FixedRangeStartMinuteDown_Click"/>
+					</StackPanel>
+				</StackPanel>
+
+				<TextBlock Grid.Column="5" Text="{x:Static res:Strings.WorkSchedule_To}" VerticalAlignment="Center" Margin="0,0,6,0" HorizontalAlignment="Left"/>
+
+				<StackPanel Grid.Column="6" Orientation="Horizontal" Margin="0,0,4,0" HorizontalAlignment="Left">
+					<TextBox x:Name="WorkScheduleEndHourBox" Width="40" TextAlignment="Center" VerticalContentAlignment="Center" LostFocus="FixedRangeTextBox_LostFocus"/>
+					<StackPanel Width="18" Margin="2,0,0,0">
+						<RepeatButton Content="&#x25B2;" Height="12" FontSize="8" Padding="0" Click="FixedRangeEndHourUp_Click"/>
+						<RepeatButton Content="&#x25BC;" Height="12" FontSize="8" Padding="0" Click="FixedRangeEndHourDown_Click"/>
+					</StackPanel>
+				</StackPanel>
+
+				<TextBlock Grid.Column="7" Text=":" VerticalAlignment="Center" Margin="0,0,4,0" HorizontalAlignment="Center"/>
+
+				<StackPanel Grid.Column="8" Orientation="Horizontal" HorizontalAlignment="Left">
+					<TextBox x:Name="WorkScheduleEndMinuteBox" Width="40" TextAlignment="Center" VerticalContentAlignment="Center" LostFocus="FixedRangeTextBox_LostFocus"/>
+					<StackPanel Width="18" Margin="2,0,0,0">
+						<RepeatButton Content="&#x25B2;" Height="12" FontSize="8" Padding="0" Click="FixedRangeEndMinuteUp_Click"/>
+						<RepeatButton Content="&#x25BC;" Height="12" FontSize="8" Padding="0" Click="FixedRangeEndMinuteDown_Click"/>
+					</StackPanel>
+				</StackPanel>
+			</Grid>
+
+			<Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" >
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+
+				<TextBlock Grid.Column="0" Text="{x:Static res:Strings.WorkSchedule_Cooldown_Label}" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold" Margin="0,0,8,0"/>
+				<StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+					<TextBox x:Name="CooldownSecondsBox" Width="40" TextAlignment="Center" VerticalContentAlignment="Center" LostFocus="CooldownTextBox_LostFocus"/>
+					<StackPanel Width="18" HorizontalAlignment="Right" Margin="2,0,0,0">
+						<RepeatButton Content="&#x25B2;" Height="12" FontSize="8" Padding="0" Click="CooldownUp_Click"/>
+						<RepeatButton Content="&#x25BC;" Height="12" FontSize="8" Padding="0" Click="CooldownDown_Click"/>
+					</StackPanel>
+				</StackPanel>
+				<ComboBox x:Name="CooldownUnitBox" Grid.Column="2" Padding="6,4"/>
+			</Grid>
+		</Grid>
+	</Border>
+</UserControl>

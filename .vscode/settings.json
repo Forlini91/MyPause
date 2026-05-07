@@ -1,0 +1,8 @@
+{
+    "dotnet.defaultSolution": "MyPause.sln",
+    "csharp.experimental.dotnetTextEditor": true,
+    "files.exclude": {
+        "**/bin": false,
+        "**/obj": false
+    }
+}

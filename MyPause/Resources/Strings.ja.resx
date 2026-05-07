@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+	<data name="MainWindow_AppTitle" xml:space="preserve"><value>MyPause</value></data>
+	<data name="MainWindow_ConfiguredBreaksHeader" xml:space="preserve"><value>設定済み休憩</value></data>
+	<data name="MainWindow_NewBreakButton" xml:space="preserve"><value>+ 新しい休憩</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksFormat" xml:space="preserve"><value>{0} 件の休憩を設定</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksDefault" xml:space="preserve"><value>0 件の休憩を設定</value></data>
+	<data name="MainWindow_StartupWithWindows" xml:space="preserve"><value>Windows 起動時に開始</value></data>
+	<data name="MainWindow_MinimizeToTray" xml:space="preserve"><value>X でトレイに最小化</value></data>
+	<data name="MainWindow_Start" xml:space="preserve"><value>開始</value></data>
+	<data name="MainWindow_Stop" xml:space="preserve"><value>停止</value></data>
+	<data name="MainWindow_UserIdlePaused" xml:space="preserve"><value>ユーザーが非アクティブ: タイマーを一時停止</value></data>
+	<data name="MainWindow_UserActiveRestarted" xml:space="preserve"><value>ユーザーがアクティブ: タイマーを再開</value></data>
+	<data name="MainWindow_AlertUpdatedFormat" xml:space="preserve"><value>休憩「{0}」を更新しました</value></data>
+	<data name="MainWindow_AlertDeletedFormat" xml:space="preserve"><value>休憩「{0}」を削除しました</value></data>
+	<data name="MainWindow_AlertAddedFormat" xml:space="preserve"><value>休憩「{0}」を追加しました</value></data>
+	<data name="MainWindow_AppActiveMonitoring" xml:space="preserve"><value>アプリ起動中 - 休憩を監視しています...</value></data>
+	<data name="MainWindow_AppStopped" xml:space="preserve"><value>アプリを停止しました</value></data>
+	<data name="MainWindow_StartupEnabled" xml:space="preserve"><value>Windows 起動時の開始を有効にしました。</value></data>
+	<data name="MainWindow_StartupDisabled" xml:space="preserve"><value>Windows 起動時の開始を無効にしました。</value></data>
+	<data name="MainWindow_StartupUpdateErrorFormat" xml:space="preserve"><value>スタートアップ設定の更新エラー: {0}</value></data>
+
+	<data name="WorkSchedule_Label" xml:space="preserve"><value>勤務時間:</value></data>
+	<data name="WorkSchedule_From" xml:space="preserve"><value>開始</value></data>
+	<data name="WorkSchedule_To" xml:space="preserve"><value>終了</value></data>
+	<data name="WorkSchedule_Cooldown_Label" xml:space="preserve"><value>休憩クールダウン:</value></data>
+	<data name="WorkSchedule_Cooldown_Unit" xml:space="preserve"><value>分 (0 = 無効)</value></data>
+
+	<data name="AlertCard_DescriptionFixedTimeFormat" xml:space="preserve"><value>時刻: {0:D2}:{1:D2} - 休憩: {2}</value></data>
+	<data name="AlertCard_DescriptionTimerFormat" xml:space="preserve"><value>タイマー: 毎 {0} - 休憩: {1}</value></data>
+	<data name="AlertCard_DeleteConfirmFormat" xml:space="preserve"><value>「{0}」を削除しますか？</value></data>
+	<data name="AlertCard_ConfirmTitle" xml:space="preserve"><value>確認</value></data>
+
+	<data name="EditPause_Title" xml:space="preserve"><value>休憩を編集</value></data>
+	<data name="EditPause_Active" xml:space="preserve"><value>休憩を有効化</value></data>
+	<data name="EditPause_Name" xml:space="preserve"><value>名前</value></data>
+	<data name="EditPause_Days" xml:space="preserve"><value>曜日:</value></data>
+	<data name="EditPause_DayMon" xml:space="preserve"><value>月</value></data>
+	<data name="EditPause_DayTue" xml:space="preserve"><value>火</value></data>
+	<data name="EditPause_DayWed" xml:space="preserve"><value>水</value></data>
+	<data name="EditPause_DayThu" xml:space="preserve"><value>木</value></data>
+	<data name="EditPause_DayFri" xml:space="preserve"><value>金</value></data>
+	<data name="EditPause_DaySat" xml:space="preserve"><value>土</value></data>
+	<data name="EditPause_DaySun" xml:space="preserve"><value>日</value></data>
+	<data name="EditPause_TabFixedTime" xml:space="preserve"><value>固定時刻</value></data>
+	<data name="EditPause_Time" xml:space="preserve"><value>時刻</value></data>
+	<data name="EditPause_TabTimer" xml:space="preserve"><value>タイマー</value></data>
+	<data name="EditPause_Every" xml:space="preserve"><value>毎</value></data>
+	<data name="EditPause_Mandatory" xml:space="preserve"><value>必須休憩</value></data>
+	<data name="EditPause_PauseDuration" xml:space="preserve"><value>休憩時間</value></data>
+	<data name="EditPause_Snooze" xml:space="preserve"><value>スヌーズ</value></data>
+	<data name="EditPause_SnoozeDuration" xml:space="preserve"><value>スヌーズ時間</value></data>
+	<data name="EditPause_MaxSnoozes" xml:space="preserve"><value>最大スヌーズ回数</value></data>
+	<data name="EditPause_NotificationSound" xml:space="preserve"><value>通知音</value></data>
+	<data name="EditPause_NoSoundSelected" xml:space="preserve"><value>音声が選択されていません</value></data>
+	<data name="EditPause_SelectAudioFile" xml:space="preserve"><value>音声ファイルを選択...</value></data>
+	<data name="EditPause_ResetDefault" xml:space="preserve"><value>既定に戻す</value></data>
+	<data name="EditPause_Cancel" xml:space="preserve"><value>キャンセル</value></data>
+	<data name="EditPause_Save" xml:space="preserve"><value>保存</value></data>
+	<data name="EditPause_UnitSeconds" xml:space="preserve"><value>秒</value></data>
+	<data name="EditPause_UnitMinutes" xml:space="preserve"><value>分</value></data>
+	<data name="EditPause_UnitHours" xml:space="preserve"><value>時間</value></data>
+	<data name="EditPause_NoSoundSelectedWindowsAlert" xml:space="preserve"><value>音声が選択されていません（Windows Alert を使用）</value></data>
+	<data name="EditPause_SoundFileFormat" xml:space="preserve"><value>ファイル: {0}</value></data>
+	<data name="EditPause_SoundFileNotFound" xml:space="preserve"><value>ファイルが見つかりません（Windows Alert を使用）</value></data>
+	<data name="EditPause_OpenFileFilter" xml:space="preserve"><value>音声ファイル (*.wav;*.mp3)|*.wav;*.mp3|すべてのファイル (*.*)|*.*</value></data>
+	<data name="EditPause_OpenFileTitle" xml:space="preserve"><value>この休憩の通知音を選択</value></data>
+	<data name="EditPause_ErrorPauseDurationPositive" xml:space="preserve"><value>休憩時間は 0 より大きくする必要があります。</value></data>
+	<data name="EditPause_ErrorTimerPositive" xml:space="preserve"><value>タイマー値は 0 より大きくする必要があります。</value></data>
+	<data name="EditPause_ErrorSnoozePositive" xml:space="preserve"><value>スヌーズ時間は 0 より大きくする必要があります。</value></data>
+	<data name="EditPause_ErrorInputDataFormat" xml:space="preserve"><value>入力データエラー: {0}</value></data>
+	<data name="EditPause_ErrorNameEmpty" xml:space="preserve"><value>休止名を空にすることはできません。</value></data>
+	<data name="EditPause_ErrorNameDuplicate" xml:space="preserve"><value>休止名が無効であるか、重複しています。</value></data>
+
+	<data name="PauseNotification_Title" xml:space="preserve"><value>休憩</value></data>
+	<data name="PauseNotification_Header" xml:space="preserve"><value>休憩</value></data>
+	<data name="PauseNotification_Skip" xml:space="preserve"><value>休憩をスキップ</value></data>
+	<data name="PauseNotification_Snooze" xml:space="preserve"><value>スヌーズ</value></data>
+	<data name="PauseNotification_DurationFormat" xml:space="preserve"><value>休憩時間: {0}</value></data>
+	<data name="PauseNotification_SnoozeButtonFormat" xml:space="preserve"><value>⏱ スヌーズ ({0})</value></data>
+	<data name="PauseNotification_SnoozeAvailableFormat" xml:space="preserve"><value>利用可能なスヌーズ: {0}/{1}</value></data>
+
+	<data name="TrayMenu_Open" xml:space="preserve"><value>開く</value></data>
+	<data name="TrayMenu_Exit" xml:space="preserve"><value>終了</value></data>
+
+	<data name="Duration_LongHourSingular" xml:space="preserve"><value>時間</value></data>
+	<data name="Duration_LongHourPlural" xml:space="preserve"><value>時間</value></data>
+	<data name="Duration_LongMinuteSingular" xml:space="preserve"><value>分</value></data>
+	<data name="Duration_LongMinutePlural" xml:space="preserve"><value>分</value></data>
+	<data name="Duration_LongSecondSingular" xml:space="preserve"><value>秒</value></data>
+	<data name="Duration_LongSecondPlural" xml:space="preserve"><value>秒</value></data>
+	<data name="Duration_DaySingular" xml:space="preserve"><value>日</value></data>
+	<data name="Duration_DayPlural" xml:space="preserve"><value>日</value></data>
+
+	<data name="Alerts_Default_Morning" xml:space="preserve"><value>午前</value></data>
+	<data name="Alerts_Default_Afternoon" xml:space="preserve"><value>午後</value></data>
+	<data name="Alerts_Default_HourlyTimer" xml:space="preserve"><value>毎時タイマー</value></data>
+
+	<data name="Common_InfoTitle" xml:space="preserve"><value>情報</value></data>
+	<data name="Common_ErrorTitle" xml:space="preserve"><value>エラー</value></data>
+</root>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+	<data name="MainWindow_AppTitle" xml:space="preserve"><value>MyPause</value></data>
+	<data name="MainWindow_ConfiguredBreaksHeader" xml:space="preserve"><value>설정된 휴식</value></data>
+	<data name="MainWindow_NewBreakButton" xml:space="preserve"><value>+ 새 휴식</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksFormat" xml:space="preserve"><value>{0}개의 휴식이 설정됨</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksDefault" xml:space="preserve"><value>0개의 휴식이 설정됨</value></data>
+	<data name="MainWindow_StartupWithWindows" xml:space="preserve"><value>Windows와 함께 시작</value></data>
+	<data name="MainWindow_MinimizeToTray" xml:space="preserve"><value>X 클릭 시 트레이로 최소화</value></data>
+	<data name="MainWindow_Start" xml:space="preserve"><value>시작</value></data>
+	<data name="MainWindow_Stop" xml:space="preserve"><value>중지</value></data>
+	<data name="MainWindow_UserIdlePaused" xml:space="preserve"><value>사용자 비활성: 타이머 일시정지</value></data>
+	<data name="MainWindow_UserActiveRestarted" xml:space="preserve"><value>사용자 활성: 타이머 재시작</value></data>
+	<data name="MainWindow_AlertUpdatedFormat" xml:space="preserve"><value>휴식 '{0}'이(가) 업데이트됨</value></data>
+	<data name="MainWindow_AlertDeletedFormat" xml:space="preserve"><value>휴식 '{0}'이(가) 삭제됨</value></data>
+	<data name="MainWindow_AlertAddedFormat" xml:space="preserve"><value>휴식 '{0}'이(가) 추가됨</value></data>
+	<data name="MainWindow_AppActiveMonitoring" xml:space="preserve"><value>앱 활성 - 휴식 모니터링 중...</value></data>
+	<data name="MainWindow_AppStopped" xml:space="preserve"><value>앱 중지됨</value></data>
+	<data name="MainWindow_StartupEnabled" xml:space="preserve"><value>Windows 시작 시 실행이 활성화되었습니다.</value></data>
+	<data name="MainWindow_StartupDisabled" xml:space="preserve"><value>Windows 시작 시 실행이 비활성화되었습니다.</value></data>
+	<data name="MainWindow_StartupUpdateErrorFormat" xml:space="preserve"><value>시작 설정 업데이트 오류: {0}</value></data>
+
+	<data name="WorkSchedule_Label" xml:space="preserve"><value>근무 시간:</value></data>
+	<data name="WorkSchedule_From" xml:space="preserve"><value>시작</value></data>
+	<data name="WorkSchedule_To" xml:space="preserve"><value>종료</value></data>
+	<data name="WorkSchedule_Cooldown_Label" xml:space="preserve"><value>휴식 간 대기 시간:</value></data>
+	<data name="WorkSchedule_Cooldown_Unit" xml:space="preserve"><value>분 (0 = 비활성화)</value></data>
+
+	<data name="AlertCard_DescriptionFixedTimeFormat" xml:space="preserve"><value>시간: {0:D2}:{1:D2} - 휴식: {2}</value></data>
+	<data name="AlertCard_DescriptionTimerFormat" xml:space="preserve"><value>타이머: 매 {0} - 휴식: {1}</value></data>
+	<data name="AlertCard_DeleteConfirmFormat" xml:space="preserve"><value>'{0}'을(를) 삭제할까요?</value></data>
+	<data name="AlertCard_ConfirmTitle" xml:space="preserve"><value>확인</value></data>
+
+	<data name="EditPause_Title" xml:space="preserve"><value>휴식 편집</value></data>
+	<data name="EditPause_Active" xml:space="preserve"><value>휴식 활성</value></data>
+	<data name="EditPause_Name" xml:space="preserve"><value>이름</value></data>
+	<data name="EditPause_Days" xml:space="preserve"><value>요일:</value></data>
+	<data name="EditPause_DayMon" xml:space="preserve"><value>월</value></data>
+	<data name="EditPause_DayTue" xml:space="preserve"><value>화</value></data>
+	<data name="EditPause_DayWed" xml:space="preserve"><value>수</value></data>
+	<data name="EditPause_DayThu" xml:space="preserve"><value>목</value></data>
+	<data name="EditPause_DayFri" xml:space="preserve"><value>금</value></data>
+	<data name="EditPause_DaySat" xml:space="preserve"><value>토</value></data>
+	<data name="EditPause_DaySun" xml:space="preserve"><value>일</value></data>
+	<data name="EditPause_TabFixedTime" xml:space="preserve"><value>고정 시간</value></data>
+	<data name="EditPause_Time" xml:space="preserve"><value>시간</value></data>
+	<data name="EditPause_TabTimer" xml:space="preserve"><value>타이머</value></data>
+	<data name="EditPause_Every" xml:space="preserve"><value>매</value></data>
+	<data name="EditPause_Mandatory" xml:space="preserve"><value>필수 휴식</value></data>
+	<data name="EditPause_PauseDuration" xml:space="preserve"><value>휴식 시간</value></data>
+	<data name="EditPause_Snooze" xml:space="preserve"><value>다시 알림</value></data>
+	<data name="EditPause_SnoozeDuration" xml:space="preserve"><value>다시 알림 간격</value></data>
+	<data name="EditPause_MaxSnoozes" xml:space="preserve"><value>최대 다시 알림</value></data>
+	<data name="EditPause_NotificationSound" xml:space="preserve"><value>알림 소리</value></data>
+	<data name="EditPause_NoSoundSelected" xml:space="preserve"><value>선택된 소리 없음</value></data>
+	<data name="EditPause_SelectAudioFile" xml:space="preserve"><value>오디오 파일 선택...</value></data>
+	<data name="EditPause_ResetDefault" xml:space="preserve"><value>기본값으로 재설정</value></data>
+	<data name="EditPause_Cancel" xml:space="preserve"><value>취소</value></data>
+	<data name="EditPause_Save" xml:space="preserve"><value>저장</value></data>
+	<data name="EditPause_UnitSeconds" xml:space="preserve"><value>초</value></data>
+	<data name="EditPause_UnitMinutes" xml:space="preserve"><value>분</value></data>
+	<data name="EditPause_UnitHours" xml:space="preserve"><value>시간</value></data>
+	<data name="EditPause_NoSoundSelectedWindowsAlert" xml:space="preserve"><value>선택된 소리 없음 (Windows 알림 사용)</value></data>
+	<data name="EditPause_SoundFileFormat" xml:space="preserve"><value>파일: {0}</value></data>
+	<data name="EditPause_SoundFileNotFound" xml:space="preserve"><value>파일을 찾을 수 없음 (Windows 알림 사용)</value></data>
+	<data name="EditPause_OpenFileFilter" xml:space="preserve"><value>오디오 파일 (*.wav;*.mp3)|*.wav;*.mp3|모든 파일 (*.*)|*.*</value></data>
+	<data name="EditPause_OpenFileTitle" xml:space="preserve"><value>이 휴식에 사용할 알림 소리를 선택하세요</value></data>
+	<data name="EditPause_ErrorPauseDurationPositive" xml:space="preserve"><value>휴식 시간은 0보다 커야 합니다.</value></data>
+	<data name="EditPause_ErrorTimerPositive" xml:space="preserve"><value>타이머 값은 0보다 커야 합니다.</value></data>
+	<data name="EditPause_ErrorSnoozePositive" xml:space="preserve"><value>다시 알림 간격은 0보다 커야 합니다.</value></data>
+	<data name="EditPause_ErrorInputDataFormat" xml:space="preserve"><value>입력 데이터 오류: {0}</value></data>
+	<data name="EditPause_ErrorNameEmpty" xml:space="preserve"><value>휴식 이름은 비워둘 수 없습니다.</value></data>
+	<data name="EditPause_ErrorNameDuplicate" xml:space="preserve"><value>휴식 이름이 유효하지 않거나 중복되었습니다.</value></data>
+
+	<data name="PauseNotification_Title" xml:space="preserve"><value>휴식</value></data>
+	<data name="PauseNotification_Header" xml:space="preserve"><value>휴식</value></data>
+	<data name="PauseNotification_Skip" xml:space="preserve"><value>휴식 건너뛰기</value></data>
+	<data name="PauseNotification_Snooze" xml:space="preserve"><value>다시 알림</value></data>
+	<data name="PauseNotification_DurationFormat" xml:space="preserve"><value>휴식 시간: {0}</value></data>
+	<data name="PauseNotification_SnoozeButtonFormat" xml:space="preserve"><value>⏱ 다시 알림 ({0})</value></data>
+	<data name="PauseNotification_SnoozeAvailableFormat" xml:space="preserve"><value>가능한 다시 알림: {0}/{1}</value></data>
+
+	<data name="TrayMenu_Open" xml:space="preserve"><value>열기</value></data>
+	<data name="TrayMenu_Exit" xml:space="preserve"><value>종료</value></data>
+
+	<data name="Duration_LongHourSingular" xml:space="preserve"><value>시간</value></data>
+	<data name="Duration_LongHourPlural" xml:space="preserve"><value>시간</value></data>
+	<data name="Duration_LongMinuteSingular" xml:space="preserve"><value>분</value></data>
+	<data name="Duration_LongMinutePlural" xml:space="preserve"><value>분</value></data>
+	<data name="Duration_LongSecondSingular" xml:space="preserve"><value>초</value></data>
+	<data name="Duration_LongSecondPlural" xml:space="preserve"><value>초</value></data>
+	<data name="Duration_DaySingular" xml:space="preserve"><value>일</value></data>
+	<data name="Duration_DayPlural" xml:space="preserve"><value>일</value></data>
+
+	<data name="Alerts_Default_Morning" xml:space="preserve"><value>아침</value></data>
+	<data name="Alerts_Default_Afternoon" xml:space="preserve"><value>오후</value></data>
+	<data name="Alerts_Default_HourlyTimer" xml:space="preserve"><value>시간별 타이머</value></data>
+
+	<data name="Common_InfoTitle" xml:space="preserve"><value>정보</value></data>
+	<data name="Common_ErrorTitle" xml:space="preserve"><value>오류</value></data>
+</root>

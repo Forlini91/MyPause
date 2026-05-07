@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+	<data name="MainWindow_AppTitle" xml:space="preserve"><value>MyPause</value></data>
+	<data name="MainWindow_ConfiguredBreaksHeader" xml:space="preserve"><value>Yapılandırılmış Molalar</value></data>
+	<data name="MainWindow_NewBreakButton" xml:space="preserve"><value>+ Yeni Mola</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksFormat" xml:space="preserve"><value>{0} mola yapılandırıldı</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksDefault" xml:space="preserve"><value>0 mola yapılandırıldı</value></data>
+	<data name="MainWindow_StartupWithWindows" xml:space="preserve"><value>Windows ile Başla</value></data>
+	<data name="MainWindow_MinimizeToTray" xml:space="preserve"><value>X Simge Çubuğuna Küçült</value></data>
+	<data name="MainWindow_Start" xml:space="preserve"><value>Başla</value></data>
+	<data name="MainWindow_Stop" xml:space="preserve"><value>Durdur</value></data>
+	<data name="MainWindow_UserIdlePaused" xml:space="preserve"><value>Kullanıcı Boşta: Zamanlayıcılar Duraklatıldı</value></data>
+	<data name="MainWindow_UserActiveRestarted" xml:space="preserve"><value>Kullanıcı Etkin: Zamanlayıcılar Yeniden Başladı</value></data>
+	<data name="MainWindow_AlertUpdatedFormat" xml:space="preserve"><value>Mola '{0}' güncellendi</value></data>
+	<data name="MainWindow_AlertDeletedFormat" xml:space="preserve"><value>Mola '{0}' silindi</value></data>
+	<data name="MainWindow_AlertAddedFormat" xml:space="preserve"><value>Mola '{0}' eklendi</value></data>
+	<data name="MainWindow_AppActiveMonitoring" xml:space="preserve"><value>Uygulama Etkin - Molalar İzleniyor...</value></data>
+	<data name="MainWindow_AppStopped" xml:space="preserve"><value>Uygulama Durduruldu</value></data>
+	<data name="MainWindow_StartupEnabled" xml:space="preserve"><value>Windows ile başlatma etkinleştirildi.</value></data>
+	<data name="MainWindow_StartupDisabled" xml:space="preserve"><value>Windows ile başlatma devre dışı bırakıldı.</value></data>
+	<data name="MainWindow_StartupUpdateErrorFormat" xml:space="preserve"><value>Başlangıç ayarı güncellenemedi: {0}</value></data>
+
+	<data name="WorkSchedule_Label" xml:space="preserve"><value>Çalışma saatleri:</value></data>
+	<data name="WorkSchedule_From" xml:space="preserve"><value>başlangıç</value></data>
+	<data name="WorkSchedule_To" xml:space="preserve"><value>bitiş</value></data>
+	<data name="WorkSchedule_Cooldown_Label" xml:space="preserve"><value>Molalar arası bekleme süresi:</value></data>
+	<data name="WorkSchedule_Cooldown_Unit" xml:space="preserve"><value>dk (0 = devre dışı)</value></data>
+
+	<data name="AlertCard_DescriptionFixedTimeFormat" xml:space="preserve"><value>Saat: {0:D2}:{1:D2} - Mola: {2}</value></data>
+	<data name="AlertCard_DescriptionTimerFormat" xml:space="preserve"><value>Zamanlayıcı: her {0} - Mola: {1}</value></data>
+	<data name="AlertCard_DeleteConfirmFormat" xml:space="preserve"><value>'{0}' silinsin mi?</value></data>
+	<data name="AlertCard_ConfirmTitle" xml:space="preserve"><value>Onayla</value></data>
+
+	<data name="EditPause_Title" xml:space="preserve"><value>Molayı Düzenle</value></data>
+	<data name="EditPause_Active" xml:space="preserve"><value>Mola Etkin</value></data>
+	<data name="EditPause_Name" xml:space="preserve"><value>Ad</value></data>
+	<data name="EditPause_Days" xml:space="preserve"><value>Günler:</value></data>
+	<data name="EditPause_DayMon" xml:space="preserve"><value>Pzt</value></data>
+	<data name="EditPause_DayTue" xml:space="preserve"><value>Sal</value></data>
+	<data name="EditPause_DayWed" xml:space="preserve"><value>Çar</value></data>
+	<data name="EditPause_DayThu" xml:space="preserve"><value>Perş</value></data>
+	<data name="EditPause_DayFri" xml:space="preserve"><value>Cum</value></data>
+	<data name="EditPause_DaySat" xml:space="preserve"><value>Cmt</value></data>
+	<data name="EditPause_DaySun" xml:space="preserve"><value>Paz</value></data>
+	<data name="EditPause_TabFixedTime" xml:space="preserve"><value>Sabit Zaman</value></data>
+	<data name="EditPause_Time" xml:space="preserve"><value>Zaman</value></data>
+	<data name="EditPause_TabTimer" xml:space="preserve"><value>Zamanlayıcı</value></data>
+	<data name="EditPause_Every" xml:space="preserve"><value>Her</value></data>
+	<data name="EditPause_Mandatory" xml:space="preserve"><value>Zorunlu Mola</value></data>
+	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Mola Süresi</value></data>
+	<data name="EditPause_Snooze" xml:space="preserve"><value>Ertele</value></data>
+	<data name="EditPause_SnoozeDuration" xml:space="preserve"><value>Erteleme Süresi</value></data>
+	<data name="EditPause_MaxSnoozes" xml:space="preserve"><value>Maksimum Erteleme</value></data>
+	<data name="EditPause_NotificationSound" xml:space="preserve"><value>Bildirim Sesi</value></data>
+	<data name="EditPause_NoSoundSelected" xml:space="preserve"><value>Ses seçilmedi</value></data>
+	<data name="EditPause_SelectAudioFile" xml:space="preserve"><value>Ses dosyası seç...</value></data>
+	<data name="EditPause_ResetDefault" xml:space="preserve"><value>Varsayılan Sıfırla</value></data>
+	<data name="EditPause_Cancel" xml:space="preserve"><value>İptal</value></data>
+	<data name="EditPause_Save" xml:space="preserve"><value>Kaydet</value></data>
+	<data name="EditPause_UnitSeconds" xml:space="preserve"><value>Saniye</value></data>
+	<data name="EditPause_UnitMinutes" xml:space="preserve"><value>Dakika</value></data>
+	<data name="EditPause_UnitHours" xml:space="preserve"><value>Saat</value></data>
+	<data name="EditPause_NoSoundSelectedWindowsAlert" xml:space="preserve"><value>Ses seçilmedi (Windows Uyarı kullanılıyor)</value></data>
+	<data name="EditPause_SoundFileFormat" xml:space="preserve"><value>Dosya: {0}</value></data>
+	<data name="EditPause_SoundFileNotFound" xml:space="preserve"><value>Dosya bulunamadı (Windows Uyarı kullanılıyor)</value></data>
+	<data name="EditPause_OpenFileFilter" xml:space="preserve"><value>Ses dosyaları (*.wav;*.mp3)|*.wav;*.mp3|Tüm dosyalar (*.*)|*.*</value></data>
+	<data name="EditPause_OpenFileTitle" xml:space="preserve"><value>Bu mola için bildirim sesini seç</value></data>
+	<data name="EditPause_ErrorPauseDurationPositive" xml:space="preserve"><value>Mola süresi 0'dan büyük olmalıdır.</value></data>
+	<data name="EditPause_ErrorTimerPositive" xml:space="preserve"><value>Zamanlayıcı değeri 0'dan büyük olmalıdır.</value></data>
+	<data name="EditPause_ErrorSnoozePositive" xml:space="preserve"><value>Erteleme süresi 0'dan büyük olmalıdır.</value></data>
+	<data name="EditPause_ErrorInputDataFormat" xml:space="preserve"><value>Giriş verisi hatası: {0}</value></data>
+	<data name="EditPause_ErrorNameEmpty" xml:space="preserve"><value>Mola adı boş olamaz.</value></data>
+	<data name="EditPause_ErrorNameDuplicate" xml:space="preserve"><value>Mola adı geçersiz veya yinelenmiş.</value></data>
+
+	<data name="PauseNotification_Title" xml:space="preserve"><value>MOLA</value></data>
+	<data name="PauseNotification_Header" xml:space="preserve"><value>MOLA</value></data>
+	<data name="PauseNotification_Skip" xml:space="preserve"><value>Molayı Atla</value></data>
+	<data name="PauseNotification_Snooze" xml:space="preserve"><value>Ertele</value></data>
+	<data name="PauseNotification_DurationFormat" xml:space="preserve"><value>Mola süresi: {0}</value></data>
+	<data name="PauseNotification_SnoozeButtonFormat" xml:space="preserve"><value>⏱ Ertele ({0})</value></data>
+	<data name="PauseNotification_SnoozeAvailableFormat" xml:space="preserve"><value>Erteleme kullanılabilir: {0}/{1}</value></data>
+
+	<data name="TrayMenu_Open" xml:space="preserve"><value>Aç</value></data>
+	<data name="TrayMenu_Exit" xml:space="preserve"><value>Çık</value></data>
+
+	<data name="Duration_LongHourSingular" xml:space="preserve"><value>saat</value></data>
+	<data name="Duration_LongHourPlural" xml:space="preserve"><value>saat</value></data>
+	<data name="Duration_LongMinuteSingular" xml:space="preserve"><value>dakika</value></data>
+	<data name="Duration_LongMinutePlural" xml:space="preserve"><value>dakika</value></data>
+	<data name="Duration_LongSecondSingular" xml:space="preserve"><value>saniye</value></data>
+	<data name="Duration_LongSecondPlural" xml:space="preserve"><value>saniye</value></data>
+	<data name="Duration_DaySingular" xml:space="preserve"><value>gün</value></data>
+	<data name="Duration_DayPlural" xml:space="preserve"><value>gün</value></data>
+
+	<data name="Alerts_Default_Morning" xml:space="preserve"><value>Sabah</value></data>
+	<data name="Alerts_Default_Afternoon" xml:space="preserve"><value>Öğleden Sonra</value></data>
+	<data name="Alerts_Default_HourlyTimer" xml:space="preserve"><value>Saatlik Zamanlayıcı</value></data>
+
+	<data name="Common_InfoTitle" xml:space="preserve"><value>Bilgi</value></data>
+	<data name="Common_ErrorTitle" xml:space="preserve"><value>Hata</value></data>
+</root>

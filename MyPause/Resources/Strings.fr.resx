@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+	<data name="MainWindow_AppTitle" xml:space="preserve"><value>MyPause</value></data>
+	<data name="MainWindow_ConfiguredBreaksHeader" xml:space="preserve"><value>Pauses configurees</value></data>
+	<data name="MainWindow_NewBreakButton" xml:space="preserve"><value>+ Nouvelle pause</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksFormat" xml:space="preserve"><value>{0} pauses configurees</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksDefault" xml:space="preserve"><value>0 pause configuree</value></data>
+	<data name="MainWindow_StartupWithWindows" xml:space="preserve"><value>Demarrer avec Windows</value></data>
+	<data name="MainWindow_MinimizeToTray" xml:space="preserve"><value>X minimise dans la zone de notification</value></data>
+	<data name="MainWindow_Start" xml:space="preserve"><value>Demarrer</value></data>
+	<data name="MainWindow_Stop" xml:space="preserve"><value>Arreter</value></data>
+	<data name="MainWindow_UserIdlePaused" xml:space="preserve"><value>Utilisateur inactif: minuteurs en pause</value></data>
+	<data name="MainWindow_UserActiveRestarted" xml:space="preserve"><value>Utilisateur actif: minuteurs redemarres</value></data>
+	<data name="MainWindow_AlertUpdatedFormat" xml:space="preserve"><value>Pause '{0}' mise a jour</value></data>
+	<data name="MainWindow_AlertDeletedFormat" xml:space="preserve"><value>Pause '{0}' supprimee</value></data>
+	<data name="MainWindow_AlertAddedFormat" xml:space="preserve"><value>Pause '{0}' ajoutee</value></data>
+	<data name="MainWindow_AppActiveMonitoring" xml:space="preserve"><value>Application active - surveillance des pauses...</value></data>
+	<data name="MainWindow_AppStopped" xml:space="preserve"><value>Application arretee</value></data>
+	<data name="MainWindow_StartupEnabled" xml:space="preserve"><value>Demarrage avec Windows active.</value></data>
+	<data name="MainWindow_StartupDisabled" xml:space="preserve"><value>Demarrage avec Windows desactive.</value></data>
+	<data name="MainWindow_StartupUpdateErrorFormat" xml:space="preserve"><value>Erreur lors de la mise a jour du demarrage automatique: {0}</value></data>
+
+	<data name="WorkSchedule_Label" xml:space="preserve"><value>Plage de travail:</value></data>
+	<data name="WorkSchedule_From" xml:space="preserve"><value>de</value></data>
+	<data name="WorkSchedule_To" xml:space="preserve"><value>a</value></data>
+	<data name="WorkSchedule_Cooldown_Label" xml:space="preserve"><value>Délai entre pauses :</value></data>
+	<data name="WorkSchedule_Cooldown_Unit" xml:space="preserve"><value>min (0 = désactivé)</value></data>
+
+	<data name="AlertCard_DescriptionFixedTimeFormat" xml:space="preserve"><value>Heure: {0:D2}:{1:D2} - Pause: {2}</value></data>
+	<data name="AlertCard_DescriptionTimerFormat" xml:space="preserve"><value>Minuteur: toutes les {0} - Pause: {1}</value></data>
+	<data name="AlertCard_DeleteConfirmFormat" xml:space="preserve"><value>Supprimer '{0}'?</value></data>
+	<data name="AlertCard_ConfirmTitle" xml:space="preserve"><value>Confirmer</value></data>
+
+	<data name="EditPause_Title" xml:space="preserve"><value>Modifier la pause</value></data>
+	<data name="EditPause_Active" xml:space="preserve"><value>Pause active</value></data>
+	<data name="EditPause_Name" xml:space="preserve"><value>Nom</value></data>
+	<data name="EditPause_Days" xml:space="preserve"><value>Jours:</value></data>
+	<data name="EditPause_DayMon" xml:space="preserve"><value>L</value></data>
+	<data name="EditPause_DayTue" xml:space="preserve"><value>M</value></data>
+	<data name="EditPause_DayWed" xml:space="preserve"><value>M</value></data>
+	<data name="EditPause_DayThu" xml:space="preserve"><value>J</value></data>
+	<data name="EditPause_DayFri" xml:space="preserve"><value>V</value></data>
+	<data name="EditPause_DaySat" xml:space="preserve"><value>S</value></data>
+	<data name="EditPause_DaySun" xml:space="preserve"><value>D</value></data>
+	<data name="EditPause_TabFixedTime" xml:space="preserve"><value>Heure fixe</value></data>
+	<data name="EditPause_Time" xml:space="preserve"><value>Heure</value></data>
+	<data name="EditPause_TabTimer" xml:space="preserve"><value>Minuteur</value></data>
+	<data name="EditPause_Every" xml:space="preserve"><value>Toutes les</value></data>
+	<data name="EditPause_Mandatory" xml:space="preserve"><value>Pause obligatoire</value></data>
+	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Duree de pause</value></data>
+	<data name="EditPause_Snooze" xml:space="preserve"><value>Reporter</value></data>
+	<data name="EditPause_SnoozeDuration" xml:space="preserve"><value>Duree du report</value></data>
+	<data name="EditPause_MaxSnoozes" xml:space="preserve"><value>Reports max</value></data>
+	<data name="EditPause_NotificationSound" xml:space="preserve"><value>Son de notification</value></data>
+	<data name="EditPause_NoSoundSelected" xml:space="preserve"><value>Aucun son selectionne</value></data>
+	<data name="EditPause_SelectAudioFile" xml:space="preserve"><value>Selectionner un fichier audio...</value></data>
+	<data name="EditPause_ResetDefault" xml:space="preserve"><value>Restaurer par defaut</value></data>
+	<data name="EditPause_Cancel" xml:space="preserve"><value>Annuler</value></data>
+	<data name="EditPause_Save" xml:space="preserve"><value>Enregistrer</value></data>
+	<data name="EditPause_UnitSeconds" xml:space="preserve"><value>Secondes</value></data>
+	<data name="EditPause_UnitMinutes" xml:space="preserve"><value>Minutes</value></data>
+	<data name="EditPause_UnitHours" xml:space="preserve"><value>Heures</value></data>
+	<data name="EditPause_NoSoundSelectedWindowsAlert" xml:space="preserve"><value>Aucun son selectionne (alerte Windows utilisee)</value></data>
+	<data name="EditPause_SoundFileFormat" xml:space="preserve"><value>Fichier: {0}</value></data>
+	<data name="EditPause_SoundFileNotFound" xml:space="preserve"><value>Fichier introuvable (alerte Windows utilisee)</value></data>
+	<data name="EditPause_OpenFileFilter" xml:space="preserve"><value>Fichiers audio (*.wav;*.mp3)|*.wav;*.mp3|Tous les fichiers (*.*)|*.*</value></data>
+	<data name="EditPause_OpenFileTitle" xml:space="preserve"><value>Selectionner le son de notification pour cette pause</value></data>
+	<data name="EditPause_ErrorPauseDurationPositive" xml:space="preserve"><value>La duree de la pause doit etre superieure a 0.</value></data>
+	<data name="EditPause_ErrorTimerPositive" xml:space="preserve"><value>La valeur du minuteur doit etre superieure a 0.</value></data>
+	<data name="EditPause_ErrorSnoozePositive" xml:space="preserve"><value>La duree du report doit etre superieure a 0.</value></data>
+	<data name="EditPause_ErrorInputDataFormat" xml:space="preserve"><value>Erreur dans les donnees saisies: {0}</value></data>
+	<data name="EditPause_ErrorNameEmpty" xml:space="preserve"><value>Le nom de la pause ne peut pas être vide.</value></data>
+	<data name="EditPause_ErrorNameDuplicate" xml:space="preserve"><value>Le nom de la pause est invalide ou dupliqué.</value></data>
+
+	<data name="PauseNotification_Title" xml:space="preserve"><value>PAUSE</value></data>
+	<data name="PauseNotification_Header" xml:space="preserve"><value>PAUSE</value></data>
+	<data name="PauseNotification_Skip" xml:space="preserve"><value>Ignorer la pause</value></data>
+	<data name="PauseNotification_Snooze" xml:space="preserve"><value>Reporter</value></data>
+	<data name="PauseNotification_DurationFormat" xml:space="preserve"><value>Duree de pause: {0}</value></data>
+	<data name="PauseNotification_SnoozeButtonFormat" xml:space="preserve"><value>⏱ Reporter ({0})</value></data>
+	<data name="PauseNotification_SnoozeAvailableFormat" xml:space="preserve"><value>Reports disponibles: {0}/{1}</value></data>
+
+	<data name="TrayMenu_Open" xml:space="preserve"><value>Ouvrir</value></data>
+	<data name="TrayMenu_Exit" xml:space="preserve"><value>Quitter</value></data>
+
+	<data name="Duration_LongHourSingular" xml:space="preserve"><value>heure</value></data>
+	<data name="Duration_LongHourPlural" xml:space="preserve"><value>heures</value></data>
+	<data name="Duration_LongMinuteSingular" xml:space="preserve"><value>minute</value></data>
+	<data name="Duration_LongMinutePlural" xml:space="preserve"><value>minutes</value></data>
+	<data name="Duration_LongSecondSingular" xml:space="preserve"><value>seconde</value></data>
+	<data name="Duration_LongSecondPlural" xml:space="preserve"><value>secondes</value></data>
+	<data name="Duration_DaySingular" xml:space="preserve"><value>jour</value></data>
+	<data name="Duration_DayPlural" xml:space="preserve"><value>jours</value></data>
+
+	<data name="Alerts_Default_Morning" xml:space="preserve"><value>Matin</value></data>
+	<data name="Alerts_Default_Afternoon" xml:space="preserve"><value>Apres-midi</value></data>
+	<data name="Alerts_Default_HourlyTimer" xml:space="preserve"><value>Minuteur horaire</value></data>
+
+	<data name="Common_InfoTitle" xml:space="preserve"><value>Informations</value></data>
+	<data name="Common_ErrorTitle" xml:space="preserve"><value>Erreur</value></data>
+</root>

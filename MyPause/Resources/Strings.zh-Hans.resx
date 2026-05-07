@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+	<data name="MainWindow_AppTitle" xml:space="preserve"><value>MyPause</value></data>
+	<data name="MainWindow_ConfiguredBreaksHeader" xml:space="preserve"><value>已配置的休息</value></data>
+	<data name="MainWindow_NewBreakButton" xml:space="preserve"><value>+ 新建休息</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksFormat" xml:space="preserve"><value>已配置 {0} 个休息</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksDefault" xml:space="preserve"><value>已配置 0 个休息</value></data>
+	<data name="MainWindow_StartupWithWindows" xml:space="preserve"><value>随 Windows 启动</value></data>
+	<data name="MainWindow_MinimizeToTray" xml:space="preserve"><value>X 最小化到托盘</value></data>
+	<data name="MainWindow_Start" xml:space="preserve"><value>开始</value></data>
+	<data name="MainWindow_Stop" xml:space="preserve"><value>停止</value></data>
+	<data name="MainWindow_UserIdlePaused" xml:space="preserve"><value>用户空闲：计时器已暂停</value></data>
+	<data name="MainWindow_UserActiveRestarted" xml:space="preserve"><value>用户活跃：计时器已恢复</value></data>
+	<data name="MainWindow_AlertUpdatedFormat" xml:space="preserve"><value>休息“{0}”已更新</value></data>
+	<data name="MainWindow_AlertDeletedFormat" xml:space="preserve"><value>休息“{0}”已删除</value></data>
+	<data name="MainWindow_AlertAddedFormat" xml:space="preserve"><value>休息“{0}”已添加</value></data>
+	<data name="MainWindow_AppActiveMonitoring" xml:space="preserve"><value>应用已激活 - 正在监控休息...</value></data>
+	<data name="MainWindow_AppStopped" xml:space="preserve"><value>应用已停止</value></data>
+	<data name="MainWindow_StartupEnabled" xml:space="preserve"><value>已启用随 Windows 启动。</value></data>
+	<data name="MainWindow_StartupDisabled" xml:space="preserve"><value>已禁用随 Windows 启动。</value></data>
+	<data name="MainWindow_StartupUpdateErrorFormat" xml:space="preserve"><value>更新开机启动设置时出错：{0}</value></data>
+
+	<data name="WorkSchedule_Label" xml:space="preserve"><value>工作时间：</value></data>
+	<data name="WorkSchedule_From" xml:space="preserve"><value>从</value></data>
+	<data name="WorkSchedule_To" xml:space="preserve"><value>到</value></data>
+	<data name="WorkSchedule_Cooldown_Label" xml:space="preserve"><value>休息冷却时间：</value></data>
+	<data name="WorkSchedule_Cooldown_Unit" xml:space="preserve"><value>分钟（0 = 禁用）</value></data>
+
+	<data name="AlertCard_DescriptionFixedTimeFormat" xml:space="preserve"><value>时间：{0:D2}:{1:D2} - 休息：{2}</value></data>
+	<data name="AlertCard_DescriptionTimerFormat" xml:space="preserve"><value>计时器：每 {0} - 休息：{1}</value></data>
+	<data name="AlertCard_DeleteConfirmFormat" xml:space="preserve"><value>删除“{0}”吗？</value></data>
+	<data name="AlertCard_ConfirmTitle" xml:space="preserve"><value>确认</value></data>
+
+	<data name="EditPause_Title" xml:space="preserve"><value>编辑休息</value></data>
+	<data name="EditPause_Active" xml:space="preserve"><value>启用休息</value></data>
+	<data name="EditPause_Name" xml:space="preserve"><value>名称</value></data>
+	<data name="EditPause_Days" xml:space="preserve"><value>日期：</value></data>
+	<data name="EditPause_DayMon" xml:space="preserve"><value>一</value></data>
+	<data name="EditPause_DayTue" xml:space="preserve"><value>二</value></data>
+	<data name="EditPause_DayWed" xml:space="preserve"><value>三</value></data>
+	<data name="EditPause_DayThu" xml:space="preserve"><value>四</value></data>
+	<data name="EditPause_DayFri" xml:space="preserve"><value>五</value></data>
+	<data name="EditPause_DaySat" xml:space="preserve"><value>六</value></data>
+	<data name="EditPause_DaySun" xml:space="preserve"><value>日</value></data>
+	<data name="EditPause_TabFixedTime" xml:space="preserve"><value>固定时间</value></data>
+	<data name="EditPause_Time" xml:space="preserve"><value>时间</value></data>
+	<data name="EditPause_TabTimer" xml:space="preserve"><value>计时器</value></data>
+	<data name="EditPause_Every" xml:space="preserve"><value>每</value></data>
+	<data name="EditPause_Mandatory" xml:space="preserve"><value>强制休息</value></data>
+	<data name="EditPause_PauseDuration" xml:space="preserve"><value>休息时长</value></data>
+	<data name="EditPause_Snooze" xml:space="preserve"><value>延后</value></data>
+	<data name="EditPause_SnoozeDuration" xml:space="preserve"><value>延后时长</value></data>
+	<data name="EditPause_MaxSnoozes" xml:space="preserve"><value>最大延后次数</value></data>
+	<data name="EditPause_NotificationSound" xml:space="preserve"><value>通知声音</value></data>
+	<data name="EditPause_NoSoundSelected" xml:space="preserve"><value>未选择声音</value></data>
+	<data name="EditPause_SelectAudioFile" xml:space="preserve"><value>选择音频文件...</value></data>
+	<data name="EditPause_ResetDefault" xml:space="preserve"><value>恢复默认</value></data>
+	<data name="EditPause_Cancel" xml:space="preserve"><value>取消</value></data>
+	<data name="EditPause_Save" xml:space="preserve"><value>保存</value></data>
+	<data name="EditPause_UnitSeconds" xml:space="preserve"><value>秒</value></data>
+	<data name="EditPause_UnitMinutes" xml:space="preserve"><value>分钟</value></data>
+	<data name="EditPause_UnitHours" xml:space="preserve"><value>小时</value></data>
+	<data name="EditPause_NoSoundSelectedWindowsAlert" xml:space="preserve"><value>未选择声音（将使用 Windows 提示音）</value></data>
+	<data name="EditPause_SoundFileFormat" xml:space="preserve"><value>文件：{0}</value></data>
+	<data name="EditPause_SoundFileNotFound" xml:space="preserve"><value>文件未找到（将使用 Windows 提示音）</value></data>
+	<data name="EditPause_OpenFileFilter" xml:space="preserve"><value>音频文件 (*.wav;*.mp3)|*.wav;*.mp3|所有文件 (*.*)|*.*</value></data>
+	<data name="EditPause_OpenFileTitle" xml:space="preserve"><value>为此休息选择通知声音</value></data>
+	<data name="EditPause_ErrorPauseDurationPositive" xml:space="preserve"><value>休息时长必须大于 0。</value></data>
+	<data name="EditPause_ErrorTimerPositive" xml:space="preserve"><value>计时器数值必须大于 0。</value></data>
+	<data name="EditPause_ErrorSnoozePositive" xml:space="preserve"><value>延后时长必须大于 0。</value></data>
+	<data name="EditPause_ErrorInputDataFormat" xml:space="preserve"><value>输入数据错误：{0}</value></data>
+	<data name="EditPause_ErrorNameEmpty" xml:space="preserve"><value>暂停名称不能为空。</value></data>
+	<data name="EditPause_ErrorNameDuplicate" xml:space="preserve"><value>暂停名称无效或重复。</value></data>
+
+	<data name="PauseNotification_Title" xml:space="preserve"><value>休息</value></data>
+	<data name="PauseNotification_Header" xml:space="preserve"><value>休息</value></data>
+	<data name="PauseNotification_Skip" xml:space="preserve"><value>跳过休息</value></data>
+	<data name="PauseNotification_Snooze" xml:space="preserve"><value>延后</value></data>
+	<data name="PauseNotification_DurationFormat" xml:space="preserve"><value>休息时长：{0}</value></data>
+	<data name="PauseNotification_SnoozeButtonFormat" xml:space="preserve"><value>⏱ 延后（{0}）</value></data>
+	<data name="PauseNotification_SnoozeAvailableFormat" xml:space="preserve"><value>可延后次数：{0}/{1}</value></data>
+
+	<data name="TrayMenu_Open" xml:space="preserve"><value>打开</value></data>
+	<data name="TrayMenu_Exit" xml:space="preserve"><value>退出</value></data>
+
+	<data name="Duration_LongHourSingular" xml:space="preserve"><value>小时</value></data>
+	<data name="Duration_LongHourPlural" xml:space="preserve"><value>小时</value></data>
+	<data name="Duration_LongMinuteSingular" xml:space="preserve"><value>分钟</value></data>
+	<data name="Duration_LongMinutePlural" xml:space="preserve"><value>分钟</value></data>
+	<data name="Duration_LongSecondSingular" xml:space="preserve"><value>秒</value></data>
+	<data name="Duration_LongSecondPlural" xml:space="preserve"><value>秒</value></data>
+	<data name="Duration_DaySingular" xml:space="preserve"><value>天</value></data>
+	<data name="Duration_DayPlural" xml:space="preserve"><value>天</value></data>
+
+	<data name="Alerts_Default_Morning" xml:space="preserve"><value>上午</value></data>
+	<data name="Alerts_Default_Afternoon" xml:space="preserve"><value>下午</value></data>
+	<data name="Alerts_Default_HourlyTimer" xml:space="preserve"><value>每小时计时器</value></data>
+
+	<data name="Common_InfoTitle" xml:space="preserve"><value>信息</value></data>
+	<data name="Common_ErrorTitle" xml:space="preserve"><value>错误</value></data>
+</root>

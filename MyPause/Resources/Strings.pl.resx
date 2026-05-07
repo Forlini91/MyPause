@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+	<resheader name="version"><value>2.0</value></resheader>
+	<resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+	<resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+	<data name="MainWindow_AppTitle" xml:space="preserve"><value>MyPause</value></data>
+	<data name="MainWindow_ConfiguredBreaksHeader" xml:space="preserve"><value>Skonfigurowane Przerwy</value></data>
+	<data name="MainWindow_NewBreakButton" xml:space="preserve"><value>+ Nowa Przerwa</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksFormat" xml:space="preserve"><value>Skonfigurowano {0} przerw</value></data>
+	<data name="MainWindow_StatusConfiguredBreaksDefault" xml:space="preserve"><value>Skonfigurowano 0 przerw</value></data>
+	<data name="MainWindow_StartupWithWindows" xml:space="preserve"><value>Uruchom w Systemie Windows</value></data>
+	<data name="MainWindow_MinimizeToTray" xml:space="preserve"><value>X Minimalizuje do Zasobnika</value></data>
+	<data name="MainWindow_Start" xml:space="preserve"><value>Uruchom</value></data>
+	<data name="MainWindow_Stop" xml:space="preserve"><value>Zatrzymaj</value></data>
+	<data name="MainWindow_UserIdlePaused" xml:space="preserve"><value>Użytkownik Bezczynny: Czasomierze Wstrzymane</value></data>
+	<data name="MainWindow_UserActiveRestarted" xml:space="preserve"><value>Użytkownik Aktywny: Czasomierze Wznowione</value></data>
+	<data name="MainWindow_AlertUpdatedFormat" xml:space="preserve"><value>Przerwa '{0}' zaktualizowana</value></data>
+	<data name="MainWindow_AlertDeletedFormat" xml:space="preserve"><value>Przerwa '{0}' usunięta</value></data>
+	<data name="MainWindow_AlertAddedFormat" xml:space="preserve"><value>Przerwa '{0}' dodana</value></data>
+	<data name="MainWindow_AppActiveMonitoring" xml:space="preserve"><value>Aplikacja Aktywna - Monitorowanie Przerw...</value></data>
+	<data name="MainWindow_AppStopped" xml:space="preserve"><value>Aplikacja Zatrzymana</value></data>
+	<data name="MainWindow_StartupEnabled" xml:space="preserve"><value>Uruchamianie w Systemie Windows Włączone.</value></data>
+	<data name="MainWindow_StartupDisabled" xml:space="preserve"><value>Uruchamianie w Systemie Windows Wyłączone.</value></data>
+	<data name="MainWindow_StartupUpdateErrorFormat" xml:space="preserve"><value>Błąd Aktualizacji Ustawienia Uruchamiania: {0}</value></data>
+
+	<data name="WorkSchedule_Label" xml:space="preserve"><value>Harmonogram pracy:</value></data>
+	<data name="WorkSchedule_From" xml:space="preserve"><value>od</value></data>
+	<data name="WorkSchedule_To" xml:space="preserve"><value>do</value></data>
+	<data name="WorkSchedule_Cooldown_Label" xml:space="preserve"><value>Odstęp między przerwami:</value></data>
+	<data name="WorkSchedule_Cooldown_Unit" xml:space="preserve"><value>min (0 = wyłączone)</value></data>
+
+	<data name="AlertCard_DescriptionFixedTimeFormat" xml:space="preserve"><value>Czas: {0:D2}:{1:D2} - Przerwa: {2}</value></data>
+	<data name="AlertCard_DescriptionTimerFormat" xml:space="preserve"><value>Czasomierz: co {0} - Przerwa: {1}</value></data>
+	<data name="AlertCard_DeleteConfirmFormat" xml:space="preserve"><value>Usunąć '{0}'?</value></data>
+	<data name="AlertCard_ConfirmTitle" xml:space="preserve"><value>Potwierdź</value></data>
+
+	<data name="EditPause_Title" xml:space="preserve"><value>Edytuj Przerwę</value></data>
+	<data name="EditPause_Active" xml:space="preserve"><value>Przerwa Aktywna</value></data>
+	<data name="EditPause_Name" xml:space="preserve"><value>Nazwa</value></data>
+	<data name="EditPause_Days" xml:space="preserve"><value>Dni:</value></data>
+	<data name="EditPause_DayMon" xml:space="preserve"><value>Pn</value></data>
+	<data name="EditPause_DayTue" xml:space="preserve"><value>Wt</value></data>
+	<data name="EditPause_DayWed" xml:space="preserve"><value>Śr</value></data>
+	<data name="EditPause_DayThu" xml:space="preserve"><value>Cz</value></data>
+	<data name="EditPause_DayFri" xml:space="preserve"><value>Pt</value></data>
+	<data name="EditPause_DaySat" xml:space="preserve"><value>So</value></data>
+	<data name="EditPause_DaySun" xml:space="preserve"><value>Nd</value></data>
+	<data name="EditPause_TabFixedTime" xml:space="preserve"><value>Stały Czas</value></data>
+	<data name="EditPause_Time" xml:space="preserve"><value>Czas</value></data>
+	<data name="EditPause_TabTimer" xml:space="preserve"><value>Czasomierz</value></data>
+	<data name="EditPause_Every" xml:space="preserve"><value>Co</value></data>
+	<data name="EditPause_Mandatory" xml:space="preserve"><value>Obowiązkowa Przerwa</value></data>
+	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Czas Trwania Przerwy</value></data>
+	<data name="EditPause_Snooze" xml:space="preserve"><value>Drzemka</value></data>
+	<data name="EditPause_SnoozeDuration" xml:space="preserve"><value>Czas Drzemki</value></data>
+	<data name="EditPause_MaxSnoozes" xml:space="preserve"><value>Maks. Drzemek</value></data>
+	<data name="EditPause_NotificationSound" xml:space="preserve"><value>Dźwięk Powiadomienia</value></data>
+	<data name="EditPause_NoSoundSelected" xml:space="preserve"><value>Nie wybrano dźwięku</value></data>
+	<data name="EditPause_SelectAudioFile" xml:space="preserve"><value>Wybierz plik audio...</value></data>
+	<data name="EditPause_ResetDefault" xml:space="preserve"><value>Resetuj Domyślne</value></data>
+	<data name="EditPause_Cancel" xml:space="preserve"><value>Anuluj</value></data>
+	<data name="EditPause_Save" xml:space="preserve"><value>Zapisz</value></data>
+	<data name="EditPause_UnitSeconds" xml:space="preserve"><value>Sekundy</value></data>
+	<data name="EditPause_UnitMinutes" xml:space="preserve"><value>Minuty</value></data>
+	<data name="EditPause_UnitHours" xml:space="preserve"><value>Godziny</value></data>
+	<data name="EditPause_NoSoundSelectedWindowsAlert" xml:space="preserve"><value>Nie wybrano dźwięku (Używany Alert Windows)</value></data>
+	<data name="EditPause_SoundFileFormat" xml:space="preserve"><value>Plik: {0}</value></data>
+	<data name="EditPause_SoundFileNotFound" xml:space="preserve"><value>Plik nie znaleziony (Używany Alert Windows)</value></data>
+	<data name="EditPause_OpenFileFilter" xml:space="preserve"><value>Pliki audio (*.wav;*.mp3)|*.wav;*.mp3|Wszystkie pliki (*.*)|*.*</value></data>
+	<data name="EditPause_OpenFileTitle" xml:space="preserve"><value>Wybierz dźwięk powiadomienia dla tej przerwy</value></data>
+	<data name="EditPause_ErrorPauseDurationPositive" xml:space="preserve"><value>Czas przerwy musi być większy niż 0.</value></data>
+	<data name="EditPause_ErrorTimerPositive" xml:space="preserve"><value>Wartość czasomierza musi być większa niż 0.</value></data>
+	<data name="EditPause_ErrorSnoozePositive" xml:space="preserve"><value>Czas drzemki musi być większy niż 0.</value></data>
+	<data name="EditPause_ErrorInputDataFormat" xml:space="preserve"><value>Błąd Danych Wejściowych: {0}</value></data>
+	<data name="EditPause_ErrorNameEmpty" xml:space="preserve"><value>Nazwa przerwy nie może być pusta.</value></data>
+	<data name="EditPause_ErrorNameDuplicate" xml:space="preserve"><value>Nazwa przerwy jest nieprawidłowa lub zduplikowana.</value></data>
+
+	<data name="PauseNotification_Title" xml:space="preserve"><value>PRZERWA</value></data>
+	<data name="PauseNotification_Header" xml:space="preserve"><value>PRZERWA</value></data>
+	<data name="PauseNotification_Skip" xml:space="preserve"><value>Pomiń Przerwę</value></data>
+	<data name="PauseNotification_Snooze" xml:space="preserve"><value>Drzemka</value></data>
+	<data name="PauseNotification_DurationFormat" xml:space="preserve"><value>Czas przerwy: {0}</value></data>
+	<data name="PauseNotification_SnoozeButtonFormat" xml:space="preserve"><value>⏱ Drzemka ({0})</value></data>
+	<data name="PauseNotification_SnoozeAvailableFormat" xml:space="preserve"><value>Dostępne drzemki: {0}/{1}</value></data>
+
+	<data name="TrayMenu_Open" xml:space="preserve"><value>Otwórz</value></data>
+	<data name="TrayMenu_Exit" xml:space="preserve"><value>Wyjdź</value></data>
+
+	<data name="Duration_LongHourSingular" xml:space="preserve"><value>godzina</value></data>
+	<data name="Duration_LongHourPlural" xml:space="preserve"><value>godziny</value></data>
+	<data name="Duration_LongMinuteSingular" xml:space="preserve"><value>minuta</value></data>
+	<data name="Duration_LongMinutePlural" xml:space="preserve"><value>minuty</value></data>
+	<data name="Duration_LongSecondSingular" xml:space="preserve"><value>sekunda</value></data>
+	<data name="Duration_LongSecondPlural" xml:space="preserve"><value>sekundy</value></data>
+	<data name="Duration_DaySingular" xml:space="preserve"><value>dzień</value></data>
+	<data name="Duration_DayPlural" xml:space="preserve"><value>dni</value></data>
+
+	<data name="Alerts_Default_Morning" xml:space="preserve"><value>Poranek</value></data>
+	<data name="Alerts_Default_Afternoon" xml:space="preserve"><value>Popołudnie</value></data>
+	<data name="Alerts_Default_HourlyTimer" xml:space="preserve"><value>Czasomierz Co Godzinę</value></data>
+
+	<data name="Common_InfoTitle" xml:space="preserve"><value>Informacja</value></data>
+	<data name="Common_ErrorTitle" xml:space="preserve"><value>Błąd</value></data>
+</root>

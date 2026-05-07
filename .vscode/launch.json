@@ -1,0 +1,17 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug MyPause",
+			"type": "coreclr",
+			"request": "launch",
+			"preLaunchTask": "build",
+			"program": "${workspaceFolder}/MyPause/bin/Debug/net9.0-windows/MyPause.dll",
+			"args": [],
+			"cwd": "${workspaceFolder}/MyPause",
+			"stopAtEntry": false,
+			"console": "internalConsole",
+			"internalConsoleOptions": "openOnSessionStart"
+		}
+	]
+}
