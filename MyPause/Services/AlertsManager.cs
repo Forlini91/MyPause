@@ -14,10 +14,8 @@ namespace MyPause.Services
 		private Dictionary<string, Alert> _alertById;
 		/// <summary>Work schedule, used to read PauseCooldownMinutes at runtime.</summary>
 		private WorkSchedule _workSchedule;
-		/// <summary>Current alerts collection.</summary>
-		public IEnumerable<Alert> Alerts => _alertById.Values.AsEnumerable();
 		/// <summary>Timestamp of the last triggered pause, used to enforce cooldown.</summary>
-		private DateTime? _lastTrigger;
+		private DateTime _lastPause = DateTime.MinValue;
 
 		#endregion
 
@@ -53,6 +51,7 @@ namespace MyPause.Services
 			_alertById[alert.Id] = alert;
 			alert.OnUpdate += OnAlertUpdate;
 			alert.CanTriggerPause = CanTriggerPause;
+			alert.GetExistingPausedAlert = GetExistingPausedAlert;
 		}
 
 		/// <summary>
@@ -70,13 +69,15 @@ namespace MyPause.Services
 		/// <summary>
 		/// Sets frozen state for all alerts.
 		/// </summary>
+		/// <param name="cause">Reason for freezing/unfreezing.</param>
 		/// <param name="frozen">True to freeze, false to unfreeze.</param>
-		public void SetAllFrozen(string cause, bool frozen)
+		/// <param name="refresh">True to refresh alerts after changing frozen state.</param>
+		public void SetAllFrozen(string cause, bool frozen, bool refresh)
 		{
-			Debug.WriteLine($"[AlertsManager] Setting all alerts frozen: {frozen}");
+			Debug.WriteLine($"[AlertsManager] Setting all alerts frozen: \"{cause}\" => {frozen}");
 			foreach (var alert in _alertById.Values)
 			{
-				alert.SetFreeze(cause, frozen);
+				alert.SetFreeze(cause, frozen, refresh);
 			}
 		}
 
@@ -118,7 +119,10 @@ namespace MyPause.Services
 		{
 			foreach (var alert in _alertById.Values)
 			{
-				alert.ResetTimerCounter(refresh);
+				if (alert.Type is AlertType.Timer && alert.ResetTimerForEveryPause)
+				{
+					alert.ResetTimerCounter(refresh);
+				}
 			}
 		}
 
@@ -129,22 +133,26 @@ namespace MyPause.Services
 		/// </summary>
 		public bool CanTriggerPause()
 		{
-			if (_alertById.Values.Any(a => a.State is AlertState.Paused or AlertState.Snoozed))
-				return false;
-
 			var cooldownSeconds = _workSchedule.PauseCooldownSeconds;
-			if (cooldownSeconds > 0 && _lastTrigger.HasValue)
-			{
-				if ((DateTime.Now - _lastTrigger.Value).TotalSeconds < cooldownSeconds)
-					return false;
-			}
+			return cooldownSeconds <= 0 || (DateTime.Now - _lastPause).TotalSeconds >= cooldownSeconds;
+		}
 
-			return true;
+		public Alert? GetExistingPausedAlert()
+		{
+			return _alertById.Values.FirstOrDefault(a => a.State is AlertState.Paused or AlertState.Snoozed);
 		}
 
 		public bool ValidateName(string name)
 		{
 			return !_alertById.Values.Any(alert => alert.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+		}
+
+		public void ForEach(Action<Alert> action)
+		{
+			foreach (var alert in _alertById.Values)
+			{
+				action(alert);
+			}
 		}
 
 		#endregion
@@ -168,7 +176,10 @@ namespace MyPause.Services
 					alert => alert
 				);
 			foreach (var alert in _alertById.Values)
+			{
 				alert.CanTriggerPause = CanTriggerPause;
+				alert.GetExistingPausedAlert = GetExistingPausedAlert;
+			}
 		}
 
 		/// <summary>
@@ -237,15 +248,15 @@ namespace MyPause.Services
 			switch (snapshot.State)
 			{
 				case AlertState.Paused:
-					_lastTrigger = DateTime.Now;
-					ResetAllTimers(false);
+					_lastPause = DateTime.Now;
+					ResetAllTimers(snapshot.StateChanged);
 					break;
 				case AlertState.Snoozed:
 				case AlertState.PauseCompleted:
 					if (snapshot.StateChanged)
 					{
-						_lastTrigger = DateTime.Now;
-						ResetAllTimers(false);
+						_lastPause = DateTime.Now;
+						ResetAllTimers(true);
 					}
 					break;
 			}

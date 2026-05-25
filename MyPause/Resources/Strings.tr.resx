@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>Zaman</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>Zamanlayıcı</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>Her</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>Her moladan sonra zamanlayıcıyı sıfırla</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>Zorunlu Mola</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Mola Süresi</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>Ertele</value></data>

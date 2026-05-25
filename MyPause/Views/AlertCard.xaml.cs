@@ -181,7 +181,7 @@ namespace MyPause.Views
 			try
 			{
 				e.Handled = true;
-				_alertsManager.SetAllFrozen(FreezeCauseUpdate, true);
+				_alertsManager.SetAllFrozen(FreezeCauseUpdate, true, true);
 				OnAlertEdit?.Invoke(this, new AlertCardUpdateEvent(_alert, AlertCardUpdateState.Before));
 				var editWindow = new EditPauseWindow(_alert.Config, true, _alertsManager.ValidateName);
 				if (editWindow.ShowDialog() == true)
@@ -203,7 +203,7 @@ namespace MyPause.Views
 			}
 			finally
 			{
-				_alertsManager.SetAllFrozen(FreezeCauseUpdate, false);
+				_alertsManager.SetAllFrozen(FreezeCauseUpdate, false, true);
 			}
 		}
 
@@ -212,7 +212,7 @@ namespace MyPause.Views
 			try
 			{
 				e.Handled = true;
-				_alertsManager.SetAllFrozen(FreezeCauseDelete, true);
+				_alertsManager.SetAllFrozen(FreezeCauseDelete, true, true);
 				OnAlertDelete?.Invoke(this, new AlertCardUpdateEvent(_alert, AlertCardUpdateState.Before));
 				if (MessageBox.Show(Strings.AlertCard_DeleteConfirmFormat(_alert.Name), Strings.AlertCard_ConfirmTitle, MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
 				{
@@ -233,7 +233,7 @@ namespace MyPause.Views
 			}
 			finally
 			{
-				_alertsManager.SetAllFrozen(FreezeCauseDelete, false);
+				_alertsManager.SetAllFrozen(FreezeCauseDelete, false, true);
 			}
 		}
 

@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>الوقت</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>مؤقت</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>كل</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>إعادة ضبط المؤقت بعد كل استراحة</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>استراحة إلزامية</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>مدة الاستراحة</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>تأجيل</value></data>

@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>Waktu</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>Pengatur Waktu</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>Setiap</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>Atur ulang timer setelah setiap jeda</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>Istirahat Wajib</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Durasi Istirahat</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>Tunda</value></data>

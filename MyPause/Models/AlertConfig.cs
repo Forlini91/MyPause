@@ -19,6 +19,8 @@ namespace MyPause.Models
 		public int FixedTimeMinute { get; set; } = 0;
 		/// <summary>Timer interval in seconds.</summary>
 		public int TimerSeconds { get; set; } = 3600;
+		/// <summary>Whether the alert should reset the timer when another alert triggers.</summary>
+		public bool ResetTimerForEveryPause { get; set; } = true;
 		/// <summary>Pause duration in seconds.</summary>
 		public int PauseDurationSeconds { get; set; } = 300;
 		/// <summary>Snooze behavior configuration.</summary>
@@ -37,6 +39,7 @@ namespace MyPause.Models
 			return new AlertConfig
 			{
 				Id = Id,
+				IsActive = IsActive,
 				Name = Name,
 				Type = Type,
 				FixedTimeHour = FixedTimeHour,
@@ -44,7 +47,7 @@ namespace MyPause.Models
 				TimerSeconds = TimerSeconds,
 				PauseDurationSeconds = PauseDurationSeconds,
 				SnoozeConfig = SnoozeConfig.Clone(),
-				IsActive = IsActive,
+				ResetTimerForEveryPause = ResetTimerForEveryPause,
 				ActiveDays = [.. ActiveDays],
 				NotificationSoundPath = NotificationSoundPath
 			};

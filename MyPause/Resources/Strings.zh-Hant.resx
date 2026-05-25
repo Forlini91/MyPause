@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>時間</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>計時器</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>每</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>每次休息後重設計時器</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>強制休息</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>休息時長</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>延後</value></data>

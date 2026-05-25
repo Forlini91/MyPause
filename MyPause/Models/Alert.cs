@@ -43,6 +43,8 @@ namespace MyPause.Models
 		public int FixedTimeMinute => _config.FixedTimeMinute;
 		/// <summary>Timer interval in seconds.</summary>
 		public int TimerSeconds => _config.TimerSeconds;
+		/// <summary>Whether to reset the timer for every pause.</summary>
+		public bool ResetTimerForEveryPause => _config.ResetTimerForEveryPause;
 		/// <summary>Pause duration in seconds.</summary>
 		public int PauseDurationSeconds => _config.PauseDurationSeconds;
 		/// <summary>Snooze configuration.</summary>
@@ -78,6 +80,8 @@ namespace MyPause.Models
 		/// Typically injected by AlertsManager to enforce cooldown and stacking prevention.
 		/// </summary>
 		public Func<bool>? CanTriggerPause { get; set; }
+
+		public Func<Alert?>? GetExistingPausedAlert { get; set; }
 
 		/// <summary>Current runtime state.</summary>
 		public AlertState State
@@ -301,6 +305,28 @@ namespace MyPause.Models
 			return false;
 		}
 
+		private bool ContinuePauseFrom(Alert other)
+		{
+			if (PauseDurationSeconds < other.PauseDurationSeconds)
+				return CompletePause();
+
+			bool changed;
+			if (other.State is AlertState.Paused)
+				changed = SetState(AlertState.Paused);
+			else if (other.State is AlertState.Snoozed)
+				changed = SetState(AlertState.Snoozed);
+			else
+				return false;
+
+			if (!changed)
+				return false;
+
+			_stateTime = other._stateTime;
+			SnoozeCount = other.SnoozeCount;
+			other.CompletePause();
+			return true;
+		}
+
 		public bool Wait()
 		{
 			if (State is AlertState.Running or AlertState.Paused or AlertState.Snoozed or AlertState.PauseCompleted)
@@ -316,7 +342,8 @@ namespace MyPause.Models
 		/// <summary>Freezes or unfreezes the alert for the given cause. Multiple freeze causes are supported, alert is unfrozen only when all causes are removed.</summary>
 		/// <param name="cause">Unique identifier for the freeze cause (e.g. alert ID for global freezes, or "UI" for freezes caused by user interaction).</param>
 		/// <param name="value">True to freeze, false to unfreeze.</param>
-		public bool SetFreeze(string cause, bool value)
+		/// <param name="refresh">True to refresh the alert after changing frozen state.</param>
+		public bool SetFreeze(string cause, bool value, bool refresh)
 		{
 			var isFrozen = IsFrozen;
 
@@ -334,7 +361,8 @@ namespace MyPause.Models
 
 			Debug.WriteLine($"[{Name}] Frozen: {isFrozen} → {value}");
 
-			Refresh();
+			if (refresh)
+				Refresh();
 			return true;
 		}
 
@@ -381,7 +409,16 @@ namespace MyPause.Models
 			else if (HasAlreadyFired(now))
 				return CompletePause();
 			else if (IsFiring(now))
-				return CanTriggerPause?.Invoke() != false ? StartPause() : CompletePause();
+			{
+				if (CanTriggerPause?.Invoke() == false)
+					return CompletePause();
+
+				var prevPausedAlert = GetExistingPausedAlert?.Invoke();
+				if (prevPausedAlert != null)
+					return ContinuePauseFrom(prevPausedAlert);
+
+				return StartPause();
+			}
 			return false;
 		}
 

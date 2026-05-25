@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>시간</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>타이머</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>매</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>휴식할 때마다 타이머 재설정</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>필수 휴식</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>휴식 시간</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>다시 알림</value></data>

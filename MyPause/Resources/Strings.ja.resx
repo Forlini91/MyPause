@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>時刻</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>タイマー</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>毎</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>休憩ごとにタイマーをリセットする</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>必須休憩</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>休憩時間</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>スヌーズ</value></data>

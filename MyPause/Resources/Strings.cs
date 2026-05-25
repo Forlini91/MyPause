@@ -47,6 +47,7 @@ public static class Strings
 	public static string EditPause_Time => Get(nameof(EditPause_Time));
 	public static string EditPause_TabTimer => Get(nameof(EditPause_TabTimer));
 	public static string EditPause_Every => Get(nameof(EditPause_Every));
+	public static string EditPause_ResetTimerForEveryPause => Get(nameof(EditPause_ResetTimerForEveryPause));
 	public static string EditPause_Mandatory => Get(nameof(EditPause_Mandatory));
 	public static string EditPause_PauseDuration => Get(nameof(EditPause_PauseDuration));
 	public static string EditPause_Snooze => Get(nameof(EditPause_Snooze));

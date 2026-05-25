@@ -57,6 +57,8 @@ namespace MyPause.Views
 		}
 		#endregion
 
+
+
 		#region Event Handlers
 		private void UpdateUI(object? sender, AlertSnapshot snapshot)
 		{
@@ -97,6 +99,8 @@ namespace MyPause.Views
 		}
 		#endregion
 
+
+
 		#region UI Updates
 		private void UpdateCountdown(AlertSnapshot snapshot)
 		{
@@ -116,6 +120,8 @@ namespace MyPause.Views
 			SnoozeButton.Visibility = _alert.SnoozeCount < _alert.SnoozeConfig.MaxSnoozeCount ? Visibility.Visible : Visibility.Collapsed;
 		}
 		#endregion
+
+
 
 		#region Actions
 		private void SkipButton_Click(object sender, RoutedEventArgs e)

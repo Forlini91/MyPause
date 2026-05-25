@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>Tijd</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>Timer</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>Om de</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>Timer na elke pauze opnieuw instellen</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>Verplichte Pauze</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Pauzeduur</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>Uitstellen</value></data>

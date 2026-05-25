@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>Heure</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>Minuteur</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>Toutes les</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>Réinitialiser le minuteur après chaque pause</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>Pause obligatoire</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Duree de pause</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>Reporter</value></data>

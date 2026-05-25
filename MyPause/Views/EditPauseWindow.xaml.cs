@@ -197,17 +197,8 @@ namespace MyPause.Views
 			Debug.WriteLine($"[EditPauseWindow] Save clicked for alert: {NameTextBox.Text}");
 			try
 			{
-				Config.Name = NameTextBox.Text;
-				Config.Type = ScheduleTabControl.SelectedIndex == 0 ? AlertType.FixedTime : AlertType.Timer;
-				Config.FixedTimeHour = UIHelper.EvaluateTextBoxInt(FixedTimeHourBox, false, 0, 0, 23);
-				Config.FixedTimeMinute = UIHelper.EvaluateTextBoxInt(FixedTimeMinuteBox, true, 0, 0, 59);
-				Config.TimerSeconds = UIHelper.EvaluateTextBoxSeconds(TimerValueTextBox, TimerUnitBox, 0, 1);
-				Config.PauseDurationSeconds = UIHelper.EvaluateTextBoxSeconds(PauseDurationTextBox, PauseDurationUnitBox, 0, 1);
-				Config.SnoozeConfig.SnoozeSeconds = UIHelper.EvaluateTextBoxSeconds(SnoozeMinutesTextBox, SnoozeUnitBox, 0, 1);
-				Config.SnoozeConfig.MaxSnoozeCount = UIHelper.EvaluateTextBoxInt(MaxSnoozeCountTextBox);
-				Config.SnoozeConfig.MandatoryPause = MandatoryPauseCheckBox.IsChecked == true;
 				Config.IsActive = IsActiveCheckBox.IsChecked == true;
-
+				Config.Name = NameTextBox.Text;
 				Config.ActiveDays.Clear();
 				if (LunCheckBox.IsChecked == true) Config.ActiveDays.Add(1);
 				if (MarCheckBox.IsChecked == true) Config.ActiveDays.Add(2);
@@ -216,6 +207,17 @@ namespace MyPause.Views
 				if (VenCheckBox.IsChecked == true) Config.ActiveDays.Add(5);
 				if (SabCheckBox.IsChecked == true) Config.ActiveDays.Add(6);
 				if (DomCheckBox.IsChecked == true) Config.ActiveDays.Add(0);
+
+				Config.Type = ScheduleTabControl.SelectedIndex == 0 ? AlertType.FixedTime : AlertType.Timer;
+				Config.FixedTimeHour = UIHelper.EvaluateTextBoxInt(FixedTimeHourBox, false, 0, 0, 23);
+				Config.FixedTimeMinute = UIHelper.EvaluateTextBoxInt(FixedTimeMinuteBox, true, 0, 0, 59);
+				Config.TimerSeconds = UIHelper.EvaluateTextBoxSeconds(TimerValueTextBox, TimerUnitBox, 0, 1);
+				Config.ResetTimerForEveryPause = ResetTimerForEveryPauseCheckBox.IsChecked == true;
+				Config.PauseDurationSeconds = UIHelper.EvaluateTextBoxSeconds(PauseDurationTextBox, PauseDurationUnitBox, 0, 1);
+				Config.SnoozeConfig.SnoozeSeconds = UIHelper.EvaluateTextBoxSeconds(SnoozeMinutesTextBox, SnoozeUnitBox, 0, 1);
+				Config.SnoozeConfig.MaxSnoozeCount = UIHelper.EvaluateTextBoxInt(MaxSnoozeCountTextBox);
+				Config.SnoozeConfig.MandatoryPause = MandatoryPauseCheckBox.IsChecked == true;
+
 
 				DialogResult = true;
 				Close();

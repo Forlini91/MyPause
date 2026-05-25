@@ -105,7 +105,7 @@ namespace MyPause
 
 			AlertsPanel.Children.Clear();
 
-			foreach (var alert in _alertsManager.Alerts)
+			_alertsManager.ForEach(alert =>
 			{
 				var card = CreateAlertCard(alert);
 				AlertsPanel.Children.Add(card);
@@ -114,20 +114,20 @@ namespace MyPause
 				{
 					alert.Start();
 				}
-			}
+			});
 
 			ShowStatusDefault();
 
 			// Initialize idle detection
 			_userIdleService.OnUserBecameIdle += () =>
 			{
-				_alertsManager.SetAllFrozen(FreezeCauseIdle, true);
+				_alertsManager.SetAllFrozen(FreezeCauseIdle, true, true);
 				ShowStatusMessage(Strings.MainWindow_UserIdlePaused);
 			};
 			_userIdleService.OnUserBecameActive += () =>
 			{
-				_alertsManager.SetAllFrozen(FreezeCauseIdle, false);
-				_alertsManager.ResetAllTimers(true);
+				_alertsManager.ResetAllTimers(false);
+				_alertsManager.SetAllFrozen(FreezeCauseIdle, false, true);
 				ShowStatusMessage(Strings.MainWindow_UserActiveRestarted);
 			};
 			_userIdleService.Start();
@@ -152,10 +152,7 @@ namespace MyPause
 			_trayIconService.StopRefreshTimer();
 			_trayIconService.HideIcon();
 			SaveRuntimeStateSnapshot();
-			foreach (var alert in _alertsManager.Alerts)
-			{
-				alert.Stop();
-			}
+			_alertsManager.StopAll();
 			_notificationService.CloseAll();
 		}
 
@@ -285,7 +282,7 @@ namespace MyPause
 		#region App Actions
 		private void AddPauseButton_Click(object sender, RoutedEventArgs e)
 		{
-			_alertsManager.SetAllFrozen(FreezeCauseCreate, true);
+			_alertsManager.SetAllFrozen(FreezeCauseCreate, true, true);
 			try
 			{
 				var editWindow = new EditPauseWindow(new AlertConfig(), false, _alertsManager.ValidateName);
@@ -301,7 +298,7 @@ namespace MyPause
 			}
 			finally
 			{
-				_alertsManager.SetAllFrozen(FreezeCauseCreate, false);
+				_alertsManager.SetAllFrozen(FreezeCauseCreate, false, true);
 			}
 		}
 

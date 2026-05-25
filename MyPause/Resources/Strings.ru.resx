@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>Время</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>Таймер</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>Каждые</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>Сбрасывать таймер после каждого перерыва</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>Обязательный перерыв</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Длительность перерыва</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>Отложить</value></data>

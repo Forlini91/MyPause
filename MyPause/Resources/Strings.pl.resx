@@ -51,6 +51,7 @@
 	<data name="EditPause_Time" xml:space="preserve"><value>Czas</value></data>
 	<data name="EditPause_TabTimer" xml:space="preserve"><value>Czasomierz</value></data>
 	<data name="EditPause_Every" xml:space="preserve"><value>Co</value></data>
+	<data name="EditPause_ResetTimerForEveryPause" xml:space="preserve"><value>Resetuj licznik po każdej przerwie</value></data>
 	<data name="EditPause_Mandatory" xml:space="preserve"><value>Obowiązkowa Przerwa</value></data>
 	<data name="EditPause_PauseDuration" xml:space="preserve"><value>Czas Trwania Przerwy</value></data>
 	<data name="EditPause_Snooze" xml:space="preserve"><value>Drzemka</value></data>
