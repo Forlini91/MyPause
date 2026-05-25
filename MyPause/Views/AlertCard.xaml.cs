@@ -187,8 +187,8 @@ namespace MyPause.Views
 				if (editWindow.ShowDialog() == true)
 				{
 					Debug.WriteLine($"[AlertCard] Updating alert: {_alert.Name} (ID: {_alert.Id})");
-					OnAlertEdit?.Invoke(this, new AlertCardUpdateEvent(_alert, AlertCardUpdateState.Completed));
 					_alert.Config = editWindow.Config;
+					OnAlertEdit?.Invoke(this, new AlertCardUpdateEvent(_alert, AlertCardUpdateState.Completed));
 				}
 				else
 				{

@@ -231,7 +231,7 @@ namespace MyPause.Services
 					Name = Strings.Alerts_Default_HourlyTimer,
 					Type = AlertType.Timer,
 					TimerSeconds = 3600,
-					PauseDurationSeconds = 180,
+					PauseDurationSeconds = 300,
 					IsActive = true
 				}
 			};
