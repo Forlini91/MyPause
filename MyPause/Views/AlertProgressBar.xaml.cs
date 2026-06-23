@@ -170,7 +170,9 @@ namespace MyPause.Views
 				{
 					AlertState.Paused =>
 						TimeFormatter.FormatCountdown(TimeSpan.FromMilliseconds(Math.Max(snapshot.PauseMaxMs - snapshot.PauseElapsedMs, 0))),
-					AlertState.Snoozed or AlertState.Running =>
+					AlertState.Snoozed =>
+						TimeFormatter.FormatCountdown(TimeSpan.FromMilliseconds(Math.Max(snapshot.SnoozeMaxMs - snapshot.SnoozeElapsedMs, 0))),
+					AlertState.Running =>
 						snapshot.TimeUntilNextTrigger.HasValue
 							? TimeFormatter.FormatCountdown(snapshot.TimeUntilNextTrigger.Value)
 							: string.Empty,

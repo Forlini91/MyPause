@@ -52,6 +52,7 @@ namespace MyPause.Views
 			FixedTimeHourBox.Text = Config.FixedTimeHour.ToString();
 			FixedTimeMinuteBox.Text = Config.FixedTimeMinute.ToString("D2");
 
+			ResetTimerForEveryPauseCheckBox.IsChecked = Config.ResetTimerForEveryPause;
 			MandatoryPauseCheckBox.IsChecked = Config.SnoozeConfig.MandatoryPause;
 			MaxSnoozeCountTextBox.Text = Config.SnoozeConfig.MaxSnoozeCount.ToString();
 
@@ -199,6 +200,7 @@ namespace MyPause.Views
 			{
 				Config.IsActive = IsActiveCheckBox.IsChecked == true;
 				Config.Name = NameTextBox.Text;
+
 				Config.ActiveDays.Clear();
 				if (LunCheckBox.IsChecked == true) Config.ActiveDays.Add(1);
 				if (MarCheckBox.IsChecked == true) Config.ActiveDays.Add(2);

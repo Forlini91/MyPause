@@ -119,6 +119,17 @@ namespace MyPause.Services
 		{
 			foreach (var alert in _alertById.Values)
 			{
+				if (alert.Type is AlertType.Timer)
+				{
+					alert.ResetTimerCounter(refresh);
+				}
+			}
+		}
+
+		private void ResetAllTimersForPause(bool refresh)
+		{
+			foreach (var alert in _alertById.Values)
+			{
 				if (alert.Type is AlertType.Timer && alert.ResetTimerForEveryPause)
 				{
 					alert.ResetTimerCounter(refresh);
@@ -177,6 +188,7 @@ namespace MyPause.Services
 				);
 			foreach (var alert in _alertById.Values)
 			{
+				alert.OnUpdate += OnAlertUpdate;
 				alert.CanTriggerPause = CanTriggerPause;
 				alert.GetExistingPausedAlert = GetExistingPausedAlert;
 			}
@@ -249,14 +261,14 @@ namespace MyPause.Services
 			{
 				case AlertState.Paused:
 					_lastPause = DateTime.Now;
-					ResetAllTimers(snapshot.StateChanged);
+					ResetAllTimersForPause(snapshot.StateChanged);
 					break;
 				case AlertState.Snoozed:
 				case AlertState.PauseCompleted:
 					if (snapshot.StateChanged)
 					{
 						_lastPause = DateTime.Now;
-						ResetAllTimers(true);
+						ResetAllTimersForPause(true);
 					}
 					break;
 			}
