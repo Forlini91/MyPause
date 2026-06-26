@@ -217,8 +217,8 @@ namespace MyPause.Views
 				if (MessageBox.Show(Strings.AlertCard_DeleteConfirmFormat(_alert.Name), Strings.AlertCard_ConfirmTitle, MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
 				{
 					Debug.WriteLine($"[AlertCard] Deleting alert: {_alert.Name} (ID: {_alert.Id})");
-					OnAlertDelete?.Invoke(this, new AlertCardUpdateEvent(_alert, AlertCardUpdateState.Completed));
 					_alertsManager.DeleteAlert(_alert);
+					OnAlertDelete?.Invoke(this, new AlertCardUpdateEvent(_alert, AlertCardUpdateState.Completed));
 				}
 				else
 				{
